@@ -8,8 +8,10 @@ What the speaker means is he wants to buy a computer that runs the Windows Opera
 This misconception is rooted from the modern commercial practise to bundle and sell the hardware and software together. 
 Many firms, such Apple with its Macbook, Google its Chromebook, and Microsoft its Surface Book, adopt this method as mean to advertise their brand name and maximise their profit, while neglecting to properly educate the customers.
 
-The second misconception is that operating system determines its user interface and appearence, as summrised in the phrase: "I like MacOS because its UI is pretty". Operating system, by definition, is utterly unrelated to the UI or apperence. To put simply,
-> _**operating system**_ acts as an intermediary between the user of the computer and the computer hardware. [^OS Concept]
+The second misconception is that operating system determines its user interface and appearence, as summrised in the phrase: "I like MacOS because its UI is pretty". Operating system, by definition, is utterly unrelated to the UI or apperence. The operating system is, to put simply
+> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
+
+That is, operating system is magical software that allow one to communicate with silicon-made chips running on battery by typing the keyboard and watching the screen. 
 
 [^OS_Nomenclature]: OS is short for operating system. Thus there is MacOS, ChromeOS, HarmonyOS, etc.
 [^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).

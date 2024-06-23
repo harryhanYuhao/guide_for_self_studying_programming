@@ -12,6 +12,7 @@ I plan this book to contain the following sessions:
             - basic use cases 
             - scripting
             - Other shells 
+        - git
         - cron
         - grep 
         - find 

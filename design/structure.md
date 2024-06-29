@@ -3,9 +3,14 @@
 I plan this book to contain the following sessions: 
 
 - Introduction 
-    - Path: of learning, how to learn coding, etc
+    - How to use this book
+    - Pre-requisite: set up a computer
+        - Chosing hardware and software 
+        - I recommend Linux
+        - Install linux system 
+            - Common Distros 
+            - How to install
 - Navigating Linux system
-    - Obtain linux system 
     - how to use linux 
     - Utilities 
         - bash 

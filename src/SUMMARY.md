@@ -1,8 +1,10 @@
 # Summary
 
-- [Preface](./preface.md)
-- [In The Beginning: Let There Be Linux](./let_there_be_linux/let_there_be_linux.md)
-    - [Obtaining Linux](./let_there_be_linux/obtaining_linux.md)
-    - [Navigating Linux](./let_there_be_linux/navigating_linux.md)
+[Preface](./preface.md)
+- [Introduction](./introduction/how_to_read_this_book.md)
+    - [Setup Computer](./introduction/set_up_computer.md)
+        - [Installing Linux](./introduction/obtaining_linux.md)
+        - [Linux, Unix?](./introduction/linux_unix.md)
+- [Linux Tour](./let_there_be_linux/let_there_be_linux.md)
 - [Appendix](./appendix/appendix.md) 
     - [Bibliography](./appendix/bibliography.md)

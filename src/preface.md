@@ -1,6 +1,6 @@
 # Preface
 
-This book is a guide for self studying computer science. The targeted audience are those with little or no experience of coding. The only prerequisites are a personal computer and the willingness to learn.
+This book is a guide for self studying computer science. The targeted audience are those with little or no experience of coding, and those who learn coding only for a specific task but lack systematic knowledge. The only prerequisites are a personal computer and the the determinatin to learn.
 
 This book does not serve as the definitive source of learning, but, as a guide. This means it will not contain every detail one needs to know; instead, it surveys the areas the author deemed important for a beginner and provides author's comments with information for furthur study. In particular, this book emphasises equally on the theories of computer science as well as the pragmatic tips for writing the code. 
 

@@ -35,7 +35,14 @@ I plan this book to contain the following sessions:
         - go 
         - python 
         - lean (mathematic programming)
+- Get Comfortable with coding: Working on a Project
+    - project list on github
+    - example projects ...
 - Algorithms and Data Structure
+- Low Level Stuff
+    - Logic gates, circuits
+    - Assembly
+    - Binary files are not scary
 - Graphics and game development
 - Web and SAAS development
 - Network And Communication 

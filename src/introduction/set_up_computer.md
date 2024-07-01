@@ -17,7 +17,7 @@ A computer can function properly without peripheral hardwares. Yes, without scre
 In comparison, a computer will not function without core hardware, which includes the cpu, gpu, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a compiuter.
 
 Peripheral hardware matters little: choose the one that looks the best.
-It is on the core hardware that most computers differ the most. Here is more explainations.
+It is on the core hardware that most computers differ the most. I refer to you various sources on internet for advaHere is more explainations.
 
 ### Central Processing Unit (CPU)
 
@@ -47,17 +47,30 @@ Here are some terms that describes a cpu:
 
 1. Frequency, or Clock Rate
     
-    Frequency is the number of clock cycles a cpu can perform in a second. Most cpu can perform a single task in one clock cycle, such as adding two numbers stored in two registers.
+    Frequency is the number of clock cycles a cpu can perform in a second. Most cpu can perform a single task in one clock cycle, such as adding two numbers.
     Frequency is measured in Hertz, which is times per second.
     The higher the frequency usually means the faster the cpu. 
 
-    The first Intel CPU, Intel 4004, released in 1971, had a frequency of 740 kHz. In 2000 Intel managed to produced Pentium 4, a chip with freqency of 2 GHz, a 1400 times increase over 30 years. 
-    Since then it became increasingly difficult to further increase the frequency, and Intel resorted to other means for increasing performance, such as increasing size of cache and number of cores. 
-    In 2024, Intel released Core i9-14900KS, whose frequency is 6.2 GHz, only three times of its 2000 predecessor. Yet this chip performs much better than Pentium 4 thanks to better design.
+    The first Intel CPU, Intel 4004, released in 1971, had a frequency of 740 kHz. In 2000 Intel managed to produced Pentium 4, a chip with freqency of 2 GHz, a 2700-time increase over 30 years. 
+    Since then it became increasingly difficult to further increase the frequency.
+    In 2024, Intel released Core i9-14900KS, whose frequency is 6.2 GHz, only three times of its 2000 predecessor. Yet this chip performs much better than Pentium 4 thanks to better design and innovations in other areas.
 
 1. Threads, Cores
 
+    A cpu with 4 threads can perform 4 tasks at a time. 
+    One way of acheiving it is to integrate multiple cpus into one, each of the smaller cpu is called a core. 
+    Some cores can execute multiple threads syncronously (et, Intel's Hyperthreading). 
+    Some cpu have efficency cores for light task and performance cores for heavy tasks.
+
 1. Cache
+
+    For cpu to run faster, it needs to obtain data faster. 
+    data are stored in memory (Ram) and storage device (SSD).
+    Retrieving one instruction from memory may take thousands of cpu cycles, but it only takes one cycle to execute it.
+    To solve this problem, when cpu is to retrieve a instruction, it predicts possible subsequent data and stored them in cache. Cache is an ultra fast memory from which cpu can retrieve data fast, usually under 10 or 100 cycles. 
+    Sometimes there are multiple levels of cache, some being fastest but also smallest; some are slower but can hold more data. 
+    This kind of memory hierarchy[^Memory Hierarchy] is common in modern computer. Check memory session for more.
+    
 
 #### History of Intel Processors[^Intel Processors Source]
 
@@ -80,11 +93,13 @@ Here are some terms that describes a cpu:
 |Intel® Core™ i7-8665UE | 2018 | 4.0 GHz (Turbo)  | 8 Mb |   4 cores, 8 threads   | Integraged Intel® HD Graphics 620 GPU|
 |Intel® Core™ i9 processor 14900KS | 2024 | 6.2 GHz (Turbo)   | 32 Mb |   24 cores, 32 threads   | Integraged with Intel® UHD Graphics 770 GPU|
 
+### Storage Devices
+
 ### Memory 
 
-### GPU 
+Memory 
 
-### Storage Devices
+### GPU 
 
 ## Choosing Software 
 
@@ -111,10 +126,14 @@ That is, operating system is magical software that allow one to interact with si
 [^Assembling Computer]: [Assemble the core parts](https://www.youtube.com/watch?v=Mmq_fASrTB4); 
 [Chinese Version](https://www.bilibili.com/video/BV1tu411f7ja/?spm_id_from=333.337.search-card.all.click&vd_source=82fe9c55db42ef82bc704c85e0ace879)
 
-[^Intel Processors Source]: [Intel Processors](https://www.intel.com/pressroom/kits/quickreffam.htm#i486), 
-[i7-950](https://www.intel.com/content/www/us/en/products/sku/37150/intel-core-i7950-processor-8m-cache-3-06-ghz-4-80-gts-intel-qpi/specifications.html), 
-[i7-3970x](https://ark.intel.com/content/www/us/en/ark/products/70845/intel-core-i7-3970x-processor-extreme-edition-15m-cache-up-to-4-00-ghz.html),
-[i7-6700](https://www.intel.com/content/www/us/en/products/sku/88196/intel-core-i76700-processor-8m-cache-up-to-4-00-ghz/specifications.html)
+[^Intel Processors Source]: [Intel Processors](https://www.intel.com/pressroom/kits/quickreffam.htm#i486);
+[i7-950](https://www.intel.com/content/www/us/en/products/sku/37150/intel-core-i7950-processor-8m-cache-3-06-ghz-4-80-gts-intel-qpi/specifications.html);
+[i7-3970x](https://ark.intel.com/content/www/us/en/ark/products/70845/intel-core-i7-3970x-processor-extreme-edition-15m-cache-up-to-4-00-ghz.html);
+[i7-6700](https://www.intel.com/content/www/us/en/products/sku/88196/intel-core-i76700-processor-8m-cache-up-to-4-00-ghz/specifications.html);
+[i7-8665UE](https://www.intel.com/content/www/us/en/products/sku/193554/intel-core-i78665ue-processor-8m-cache-up-to-4-40-ghz/specifications.html);
+[i9-1490KS](https://www.intel.com/content/www/us/en/products/sku/237504/intel-core-i9-processor-14900ks-36m-cache-up-to-6-20-ghz/specifications.html)
+
+[^Memory Hierarchy]: [Wikipedia: Memory Hierarchy](https://en.wikipedia.org/wiki/Memory_hierarchy)
 
 [^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
 

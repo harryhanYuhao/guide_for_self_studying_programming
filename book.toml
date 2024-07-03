@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Guide for Self-studying Coding"
+
+[output.html]
+mathjax-support = true
+

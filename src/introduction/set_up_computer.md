@@ -9,47 +9,54 @@ Hardware is the keyboard, the chips, and anything that exist physically. Softwar
 For a beginner any functional computer will do. 
 However, to make a better choice when buying the computer, one must understand how different parts of computer work together.
 
-If you are familiar with these terms: cpu, memory, ram, motherboard, cache, skip to [Choosing Software](#choosing-software)
+If you are familiar with these terms: CPU, memory, ram, motherboard, cache, skip to [Choosing Software](#choosing-software)
 
 Computer hardware can be divided into two groups: peripheral hardware and core hardware. 
 Peripheral hardware includes the screen, keyboard, mouse, speaker, trackpad, etc. 
 A computer can function properly without peripheral hardwares. Yes, without screens or keyboard, you may not interact with the computer, but the computer can still run perfectly. 
-In comparison, a computer will not function without core hardware, which includes the cpu, gpu, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a compiuter.
+In comparison, a computer will not function without core hardware, which includes the CPU, gpu, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer.
 
 Peripheral hardware matters little: choose the one that looks the best.
-It is on the core hardware that most computers differ the most. I refer to you various sources on internet for advaHere is more explainations.
+It is on the core hardware that most computers differ the most. 
+I refer to you various sources on internet for choosing a commercially available hardware[^Internet_Choosing_Hardware].
+Here, let us focus on how they function.
 
 ### Central Processing Unit (CPU)
 
-Cpu is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the cpu.
+CPU is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the CPU. It is CPU that determines how smoothly and fast the computer runs in most circumstances.
 
-Here are some terms that describes a cpu:
+Here are some terms that describes a CPU:
 
 1. Architecture. 
 
     The architecture describes the low level circuit design of the CPU. 
     For most user, the architecture of the computer only matters when installing softwares, as some softwares may not work on certain architectures. 
 
-    Colloquially, architecture is the metonymy of the term instruction set, which defines how the software interacts with the CPU. (ie, the API) Common instruction set includes x86-64, Arm, Mips, Risc-V, and LoongArch. 
-    Most intel and Amd's cpu are of x86-64 (also known as amd64). Mac's M series chips, chips of most cell phone, and Qualcomm's Snapdragon are of Arm. 
+    Colloquially, architecture is synonymous to the term instruction set, which defines how the software interacts with the CPU (i.e., the API). Common instruction set includes x86-64, Arm, Mips, Risc-V, and LoongArch. 
+    Most intel and Amd's CPU are of x86-64 (also known as amd64). Mac's M series chips, chips of most cell phone, and Qualcomm's Snapdragon are of Arm. 
+
+    Instruction set is only a abstract definition for how CPU shall function. It is upto the manufactures to design the CPUs to fullfill the required functions.
 
     Intel and Amd have jointly developped x86-64 instruction set based on earlier ones for over forty years. 
-    This is both a blessing and a curse, as it makes x86 the most popular, stable, and well-supported instruction set, while, for various compatibility purposes, some outdated and convoluted designs have to remain. 
+    This is both a blessing and a curse, as it makes x86 the most popular, stable, and well-supported instruction set, while, for compatibility, some outdated designs have to remain. 
     Apple's M series chips use a special Arm instruction set developped by Apple. 
     Apple designs M series chips to be power efficient, and one way to acheive it is to remove legacy support. 
-    So it is not of surprise that M series computer are more power efficient in the price of all software have to be rewritten for Arm. 
+    So it is not of surprise that M series computer are more power efficient in the price of all softwares have to be rewritten for Arm. 
     
     Another aspect of architecture is bit width. 
-    Most cpu architecture today are 64 bits, which means the size of the register in CPU is 64 bits wide. 
+    Most CPU architecture today are 64 bits, which means the size of the register in CPU is 64 bits wide. 
     A register in CPU is where data is being processed. 
-    A 64 bit register can process data of 64 bits (That is, 8 bytes, or 1/128 of a KB) for each cpu clock cycle. 
+    A 64 bit register can process data of 64 bits (That is, 8 bytes, or 1/128 of a KB) for each CPU clock cycle. 
     Apple's M series, Intel's Core Series, and Amd's Ryzen series are all of 64 bits.
 
-1. Frequency, or Clock Rate
+1. Frequency, or Clock Rate[^Intel Explanation for Clock Rate]
     
-    Frequency is the number of clock cycles a cpu can perform in a second. Most cpu can perform a single task in one clock cycle, such as adding two numbers.
+    Frequency is the number of clock cycles a CPU can perform in a second. Most CPU can perform a single task in one clock cycle, such as adding two numbers. 
+    However, more complicated instruction may take multiple cycles. 
+    Some modern CPU may even execute multiple instructions in one cycle.
+
     Frequency is measured in Hertz, which is times per second.
-    The higher the frequency usually means the faster the cpu. 
+    The higher the frequency usually means the faster the CPU. 
 
     The first Intel CPU, Intel 4004, released in 1971, had a frequency of 740 kHz. In 2000 Intel managed to produced Pentium 4, a chip with freqency of 2 GHz, a 2700-time increase over 30 years. 
     Since then it became increasingly difficult to further increase the frequency.
@@ -57,22 +64,34 @@ Here are some terms that describes a cpu:
 
 1. Threads, Cores
 
-    A cpu with 4 threads can perform 4 tasks at a time. 
-    One way of acheiving it is to integrate multiple cpus into one, each of the smaller cpu is called a core. 
+    A CPU with 4 threads can perform 4 tasks at a time. 
+    One way of acheiving it is to integrate multiple smaller CPU into one chip. 
+    Each of the smaller CPU is called a core. 
     Some cores can execute multiple threads syncronously (et, Intel's Hyperthreading). 
-    Some cpu have efficency cores for light task and performance cores for heavy tasks.
+
+    Integrating several cores into one chip provides great flexibility for CPU design. 
+    Some CPU have efficency cores for lighter task and performance cores for heavy tasks.
 
 1. Cache
 
-    For cpu to run faster, it needs to obtain data faster. 
-    data are stored in memory (Ram) and storage device (SSD).
-    Retrieving one instruction from memory may take thousands of cpu cycles, but it only takes one cycle to execute it.
-    To solve this problem, when cpu is to retrieve a instruction, it predicts possible subsequent data and stored them in cache. Cache is an ultra fast memory from which cpu can retrieve data fast, usually under 10 or 100 cycles. 
-    Sometimes there are multiple levels of cache, some being fastest but also smallest; some are slower but can hold more data. 
-    This kind of memory hierarchy[^Memory Hierarchy] is common in modern computer. Check memory session for more.
-    
+    For CPU to run faster, it needs to obtain data faster. 
+    Data are stored in memory (RAM) and storage device (SSD).
+    Retrieving data from memory may take thousands of CPU cycles, but it only takes one cycle to execute it. 
+    Cache was invented to solve this problem.
+    (Here we are referring to Latency. Check RAM and Storage device session for more.)
+
+    When CPU is to retrieve data, it predicts data required for subsequnet operations and stored them in cache. Cache is an ultra fast memory from which CPU can retrieve data fast, usually under 10 or 100 cycles. 
+
+    Sometimes there are multiple levels of cache, such as L1, L2, L3. 
+    L1 caches is  the fastest but also can hold smallest amount of data; L3 are slower but can hold more data. 
+    Some cpu has two L1 caches, L1d and L1i. L1d stores data, where L1i stores instructions.
+
+    Caches, RAM and hard disk memory constitutes the memory hierarchy[^Memory Hierarchy] paradigm. Check memory session for more.
 
 #### History of Intel Processors[^Intel Processors Source]
+
+This tables describes interesting evolution of Intel CPU. 
+
 
 |Name        | Year | Frequency | Cache | Cores |  N.B.                          |
 |------------|------|-----------|-------|-------|--------------------------------|
@@ -95,11 +114,51 @@ Here are some terms that describes a cpu:
 
 ### Storage Devices
 
-### Memory 
+All data and software, including the operating system, needs to be stored persistently in a storage device which CPU can read. 
 
-Memory 
+It is usually more difficult to benchmark the performance of storage device, as the performance depends on the speed of CPU and RAM. (See next session for RAM). 
+Besides capacity, there are two metrics usually used to describe storage devices: bandwidth and latency. 
 
-### GPU 
+#### Bandwdith and Latency
+
+Bandwidth (or throughputs), measurred in bytes per second, is the maximum amount of data that can be transferred per second. 
+There are two operations for a storage device, read and write, and bandwidth for reading is likeing to be greater than writing.
+Moreover, the bandwidth would diminish dramatically when the device needs read and write in short period of time.
+
+Latency is the time it takes for cpu to retrieve data from the storage device. 
+Common latency for modern storage device ranges from hundreds of microseconds to milliseconds.
+
+In ideal situation bandwidth and latency are independent. 
+In reality, they are weakly correlated: it is of no use that you can transfer 10 GB per second but it took 10 seconds to initiate the transfer. 
+
+#### Solid State Drive (SSD) and Hard Disk Drive (HDD)
+
+The technology for manufaturing storage devices has underwent various innovation since its inception. 
+In the early days people used tapes and floppy disks.
+Two common modern technology are Solid State Drive (SSD) and Hard Disk Drive (HDD).
+
+HDD is usually cheaper, has larger capacity and longer lifetime. 
+HDD is an iconic device as at its core is a spinning magnetic disk. 
+One can here the disking spinning when it is powered on.
+
+SSD is the newer technology that boosts for its high bandwidth and low latency.
+It does not use magnetic disk but use semiconductor logical gates.
+This means SSD looks like a chip and be made smaller.
+
+Historically, SSD has been very expensive. 
+Their price has dropped dramatically since 2023, thanks to intense market competitions from the Chinese firms.
+
+### Random Access Memory (RAM)
+
+Random Access Memor, or RAM, is another layer of the memory hierarchy and a much faster storage device compared to HDD and SSD. 
+However, it is not a static storage device, which means all data will be lost after powering off. 
+
+When computers are executing some program stored in SSD, it will first load all instructions 
+
+### Graphic Processing Unit (GPU) [^Intel_on_GPU]
+
+### Other Parts of the Computer
+
 
 ## Choosing Software 
 
@@ -126,6 +185,7 @@ That is, operating system is magical software that allow one to interact with si
 [^Assembling Computer]: [Assemble the core parts](https://www.youtube.com/watch?v=Mmq_fASrTB4); 
 [Chinese Version](https://www.bilibili.com/video/BV1tu411f7ja/?spm_id_from=333.337.search-card.all.click&vd_source=82fe9c55db42ef82bc704c85e0ace879)
 
+[^Internet_Choosing_Hardware]: [CPU benchmark](https://www.CPUbenchmark.net/); [Tom's Hardware](https://www.tomshardware.com/reviews/CPU-hierarchy,4312.html); 
 [^Intel Processors Source]: [Intel Processors](https://www.intel.com/pressroom/kits/quickreffam.htm#i486);
 [i7-950](https://www.intel.com/content/www/us/en/products/sku/37150/intel-core-i7950-processor-8m-cache-3-06-ghz-4-80-gts-intel-qpi/specifications.html);
 [i7-3970x](https://ark.intel.com/content/www/us/en/ark/products/70845/intel-core-i7-3970x-processor-extreme-edition-15m-cache-up-to-4-00-ghz.html);
@@ -133,11 +193,15 @@ That is, operating system is magical software that allow one to interact with si
 [i7-8665UE](https://www.intel.com/content/www/us/en/products/sku/193554/intel-core-i78665ue-processor-8m-cache-up-to-4-40-ghz/specifications.html);
 [i9-1490KS](https://www.intel.com/content/www/us/en/products/sku/237504/intel-core-i9-processor-14900ks-36m-cache-up-to-6-20-ghz/specifications.html)
 
+[^Intel Explanation for Clock Rate]: [Intel Explanation for Clock Rrate](https://www.intel.com/content/www/us/en/gaming/resources/CPU-clock-speed.html)
+
 [^Memory Hierarchy]: [Wikipedia: Memory Hierarchy](https://en.wikipedia.org/wiki/Memory_hierarchy)
+
+[^Intel_on_GPU]: [Intel on Difference of CPU and GPU](https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html)
 
 [^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
 
-[^Windows_On_Mac]: Macbook made before 2020 running on intel cpu had the option to dual boot windows. 
+[^Windows_On_Mac]: Macbook made before 2020 running on intel CPU had the option to dual boot windows. 
 It is practically impossible to run any system except MacOS for laptops made after 2020 with a M series chip, because Apple is deliberately untransparent on the design of M series chips to hinder developers of other operating system to adapt to Apple products. [Asahi Linux](https://asahilinux.org) seems to be the only barely working exception. 
 
 [^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).

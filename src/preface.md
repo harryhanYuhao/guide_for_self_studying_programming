@@ -1,4 +1,4 @@
-# Preface
+# Guide for Self Studying Coding
 
 This book is a guide for self studying computer science. The targeted audience are those with little or no experience of coding, and those who learn coding only for a specific task but lack the systematic knowledge. The only prerequisites are a personal computer and the determination to learn.
 

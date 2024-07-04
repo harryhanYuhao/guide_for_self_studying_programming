@@ -4,6 +4,38 @@ To learn coding one must have a computer that fits his need. This means one shal
 
 Hardware is the keyboard, the chips, and anything that exist physically. Software is everything else, including the operating system, the integrated development environment (IDE), etc.
 
+## Choosing Software 
+
+### What is Operating System
+
+It seems worthy to first clear up some misconception on computer software, especially the operating system (OS).
+
+#### Operating System is Independent from Computer Hardware:
+
+Many think software and hardware are inseparable, as summarised in the phrase: "I want to buy a Windows Computer". 
+This is a misconception.
+What the speaker means is he wants to buy a computer that runs the Windows Operating System, but in fact, the computer can run any operating system he likes; let it be linux, BSD, or even MacOS[^OS_Nomenclature].
+This misconception is rooted from the modern commercial practise to sell the computer hardware with pre-installed operating system. Apple is more egregious as to allow a computer to run MacOS if and only if it is made by Apple. [^Windows_On_Mac]
+
+#### Operating System is Different from the User Interface (UI)
+
+The second misconception is that operating system determines computer's appearence, as summrised in the phrase: "I like MacOS because its UI is pretty". 
+Operating system is utterly unrelated to the UI or apperence, although display functionalities usually incorparates deeply into the operating system and certain operating systems are distributed with a default UI.
+
+#### Definition of Operating System
+
+The correct definition for operating system is, to put simply
+
+> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
+
+That is, operating system is magical software that allow one to interact with silicon chips by typing the keyboard and watching the screen. 
+Common operating systems include Windows, MacOS, and series of Linux distributions. 
+There are many less known ones. The BSD, Solaris, belongs to the Unix family. 
+AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
+Minux is another designed for teaching purpose. There are too many to be listed here.
+
+### Choosing Operating System
+
 ## Hardware: what constitutes a computer
 
 For a beginner any functional computer will do. 
@@ -80,13 +112,16 @@ Here are some terms that describes a CPU:
     Cache was invented to solve this problem.
     (Here we are referring to Latency. Check RAM and Storage device session for more.)
 
-    When CPU is to retrieve data, it predicts data required for subsequnet operations and stored them in cache. Cache is an ultra fast memory from which CPU can retrieve data fast, usually under 10 or 100 cycles. 
+    When CPU is to retrieve data, it predicts data required for subsequent operations and stored them in cache. Cache is an ultra fast memory from which CPU can retrieve data fast, usually under 10 or 100 cycles. 
 
     Sometimes there are multiple levels of cache, such as L1, L2, L3. 
     L1 caches is  the fastest but also can hold smallest amount of data; L3 are slower but can hold more data. 
     Some cpu has two L1 caches, L1d and L1i. L1d stores data, where L1i stores instructions.
+    This design takes into consideration the cost-effectiveness of different memory, as faster memory usually costs much more.
 
-    Caches, RAM and hard disk memory constitutes the memory hierarchy[^Memory Hierarchy] paradigm. Check memory session for more.
+    Caches, RAM and hard disk memory constitutes the memory hierarchy[^Memory Hierarchy] paradigm. 
+
+    Check memory hierarchy session for more.
 
 #### History of Intel Processors[^Intel Processors Source]
 
@@ -112,34 +147,59 @@ This tables describes interesting evolution of Intel CPU.
 |Intel® Core™ i7-8665UE | 2018 | 4.0 GHz (Turbo)  | 8 Mb |   4 cores, 8 threads   | Integraged Intel® HD Graphics 620 GPU|
 |Intel® Core™ i9 processor 14900KS | 2024 | 6.2 GHz (Turbo)   | 32 Mb |   24 cores, 32 threads   | Integraged with Intel® UHD Graphics 770 GPU|
 
-### Storage Devices
+### The Memory Hierarchy
 
-All data and software, including the operating system, needs to be stored persistently in a storage device which CPU can read. 
+Moder computer utilises memory hierarchy for effective data storage, fast retrieval, while maintaing cost.
 
-It is usually more difficult to benchmark the performance of storage device, as the performance depends on the speed of CPU and RAM. (See next session for RAM). 
-Besides capacity, there are two metrics usually used to describe storage devices: bandwidth and latency. 
+Caches, the fastest, most expensive, and the smallest in capacity stay at the top of the hierarchy.
+Random Access Memory (RAM) lays in the middle. It is slower than cache but faster than hard disk. 
+Hard disk is the cheapest, largest, and the slowest.
 
-#### Bandwdith and Latency
+<!-- TODO: state TABLE NAME -->
+Please see the table for comparison of the speed of caches, RAM, and hard disk, and the time for CPU to execute various other tasks.
+
+#### Characterising Performance of Storage Devices: Bandwidth
+
+Two comman benchmarking metrics for storage devices are bandwidth and latency.
 
 Bandwidth (or throughputs), measurred in bytes per second, is the maximum amount of data that can be transferred per second. 
 There are two operations for a storage device, read and write, and bandwidth for reading is likeing to be greater than writing.
-Moreover, the bandwidth would diminish dramatically when the device needs read and write in short period of time.
+Moreover, the bandwidth would diminish dramatically when the device needs read and write in short period of time, or the capacity of the device is close to full.
 
-Latency is the time it takes for cpu to retrieve data from the storage device. 
-Common latency for modern storage device ranges from hundreds of microseconds to milliseconds.
+Latency is the time between the CPU sends instruction for retrieving the data and the first byte of data delivered to the CPU.
 
 In ideal situation bandwidth and latency are independent. 
-In reality, they are weakly correlated: it is of no use that you can transfer 10 GB per second but it took 10 seconds to initiate the transfer. 
+In reality, however, they are weakly correlated: it is of no use that you can transfer 10 GB per second but it took 10 seconds to initiate the transfer. 
+
+Acurately benchmarking storage devices is very diffiult for two reason. 
+First, the performance of the storage device is unstable, as t dependends on the CPU and the design of the motherboard, the type and content of the data.
+Second, the many low level input and output are controlled solely by the hardware and is not accessible even to the operating system.
+
+Let us now introduce memory and secondary storage devices, the lower part of the hierarchy.
+
+#### Random Access Memory (RAM)
+
+Random Access Memory, or RAM, is in the middle layer of the memory hierarchy and has much faster bandwidth and shorter latency compared to HDD and SSD, but slower than cache. RAM is also much cheaper than cache.
+
+RAM is not a static storage device, which means all data stored in RAM will be lost after powering off. 
+
+When computers are executing some program stored in SSD, it will first load all instructions and data into RAM for fast CPU retrieval.
+
+#### Secondary Storage (Harddisk, SSD, HDD)
+
+Secondary storage devices (or, colloquially, the hard disk) is at the bottom of the hierarchy.
+They are static storage device. The data will not be lost after powering off.
+Thus, all persistent data and software, including the operating system, are stored in a secondary storage device.
 
 #### Solid State Drive (SSD) and Hard Disk Drive (HDD)
 
-The technology for manufaturing storage devices has underwent various innovation since its inception. 
+The technology for storage devices has underwent various innovation since its inception. 
 In the early days people used tapes and floppy disks.
 Two common modern technology are Solid State Drive (SSD) and Hard Disk Drive (HDD).
 
 HDD is usually cheaper, has larger capacity and longer lifetime. 
-HDD is an iconic device as at its core is a spinning magnetic disk. 
-One can here the disking spinning when it is powered on.
+It uses a spinning magnetic disk for data storage and a magnetic needle for reading and writing.
+You can hear the disking spinning when it is powered on.
 
 SSD is the newer technology that boosts for its high bandwidth and low latency.
 It does not use magnetic disk but use semiconductor logical gates.
@@ -148,39 +208,46 @@ This means SSD looks like a chip and be made smaller.
 Historically, SSD has been very expensive. 
 Their price has dropped dramatically since 2023, thanks to intense market competitions from the Chinese firms.
 
-### Random Access Memory (RAM)
+#### Comparison of Time Needed for Various Operations
 
-Random Access Memor, or RAM, is another layer of the memory hierarchy and a much faster storage device compared to HDD and SSD. 
-However, it is not a static storage device, which means all data will be lost after powering off. 
+|Event                           | Time (ns) | Time (\\( \mu s\\))| Time (ms) | Scale                  | 
+|--------------------------------|-----------|--------------------| --------- | ---------------------- |
+|One CPU cycle                   | 0.25      |                    |           | 0.5                    |
+|L1 cache access                 | 0.5       |                    |           | 1                      |
+|L2 cache access                 | 7         |                    |           | 14                     |               
+|Mutex lock/unlock               | 25        |                    |           | 50                     |               
+|Main memory access              | 100       | 0.1                |           | 200                    |               
+|Transmitting an Ethernet Packet | 15000     | 15                 |           | \\(3 \times 10^4\\)    |
+|SSD Access                      | 250000    | 250                |           | \\(5 \times 10^5\\)    |
+|Move Data to GPU                |           | 800                |           | \\(1.6 \times 10^6\\)  |
+|Internet Round Trip             |           | 5000               | 5         | \\(1 \times 10^7\\)    |
+|HDD Access                      |           | 10000              | 10        | \\(2 \times 10^7\\)    |
+|Cacluating Primes to 100,000    |           |                    | 100       | \\(2 \times 10^8\\)    |
+|Send a Packet From Beijing to Edinburgh |   |                    | 500       | \\(1 \times 10^9\\)    |
+|Computer Reboot                 |           |                    | 30,000    | \\(6 \times 10^{10}\\) |
 
-When computers are executing some program stored in SSD, it will first load all instructions 
+It would be worthy to compare computer's operation time and time in real life.
+
+|Computer Event                  | Real Life Event                              | Time          | Scale   | 
+|--------------------------------|--------------------------------------------- | ------------- |-------- |
+|One CPU cycle                   | Eye Blinking                                 | 0.25 s        | 0.5     |
+|L1 cache access                 | Typing a Word                                | 0.5 s         | 1       |
+|L2 cache access                 | Running 50 meters                            | 7  s          | 14      |
+|Mutex lock/unlock               | A round in Basketball                        | 24 s          | 50      |
+|Main memory access              | Reading a short passage                      | 100 s         | 200     |
+|Transmitting an Ethernet Packet | Flight from London to Moscow                 | 4.2 h         | \\(3 \times 10^4\\) |
+|SSD Access                      | Life span of may fly                         | 70 h          | \\(5 \times 10^5\\) |
+|Move Data to GPU                | Slovania Won Independence                    | 10 days       | \\(1.6 \times 10^6\\) |
+|Internet Round Trip             | China's Chang'e 6 Returns Samples from Moon  | 2 months      | \\(1 \times 10^7\\) |
+|HDD Access                      | Wheat Maturation                             | 4 months      | \\(2 \times 10^7\\) |
+|Cacluating Primes to 100,000    | One US president Term                        | 4 years       | \\(2 \times 10^8\\) |
+|Send a Packet From Beijing to Edinburgh | Pyramid of Giza Built                | 20 years      | \\(1 \times 10^9\\) |
+|Computer Reboot                 | Span of Byzantine Empire                     | 1200 years    | \\(6 \times 10^{10}\\) |
 
 ### Graphic Processing Unit (GPU) [^Intel_on_GPU]
 
 ### Other Parts of the Computer
 
-
-## Choosing Software 
-
-It seems worthy to first clear up some misconception on computer software, especially the operating system (OS).
-
-### Operating System is Independent from Computer Hardware:
-
-Many think software and hardware are inseparable, as summarised in the phrase: "I want to buy a Windows Computer". 
-This is a misconception.
-What the speaker means is he wants to buy a computer that runs the Windows Operating System, but in fact, the computer can run any operating system he likes; let it be linux, BSD, or even MacOS[^OS_Nomenclature].
-This misconception is rooted from the modern commercial practise to sell the computer hardware with pre-installed operating system. Apple is more egregious as to allow a computer to run MacOS if and only if it is made by Apple. [^Windows_On_Mac]
-
-### Operating System is Different from the User Interface (UI)
-
-The second misconception is that operating system determines computer's appearence, as summrised in the phrase: "I like MacOS because its UI is pretty". 
-Operating system is utterly unrelated to the UI or apperence, although display functionalities usually incorparates deeply into the operating system and certain operating systems are distributed with a default UI.
-
-The correct definition for operating system is, to put simply
-
-> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
-
-That is, operating system is magical software that allow one to interact with silicon chips by typing the keyboard and watching the screen. 
 
 [^Assembling Computer]: [Assemble the core parts](https://www.youtube.com/watch?v=Mmq_fASrTB4); 
 [Chinese Version](https://www.bilibili.com/video/BV1tu411f7ja/?spm_id_from=333.337.search-card.all.click&vd_source=82fe9c55db42ef82bc704c85e0ace879)

@@ -16,6 +16,9 @@
 
 ## E
 
+- e.g., exempli gratia (Latin), for the sake of the example
+- etc., et cetera (Latin), and others
+
 ## F
 
 - Freqency, Or Clock Rate, 
@@ -28,6 +31,8 @@
 
 ## I
 
+- i.e., id est (Latin), that is (literaly)
+
 ## J
 
 ## K
@@ -37,6 +42,8 @@
 ## M
 
 ## N
+
+- N.B., nota bene (Latin): Take good notes! (imperative). Literaly means note well.
 
 ## O
 

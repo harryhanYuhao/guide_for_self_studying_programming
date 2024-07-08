@@ -1,7 +1,7 @@
 # Summary
 
-<!-- [Guide for Self Studying Coding](./title_page.md) -->
-[Guide for Self Studying Coding](./preface.md)
+[Guide for Self Studying Coding](./title_page.md)
+
 - [How to Read this book](./introduction/how_to_read_this_book.md)
     - [Setup Computer](./introduction/set_up_computer.md)
         - [Installing Linux](./introduction/obtaining_linux.md)
@@ -10,3 +10,5 @@
 - [Appendix](./appendix/appendix.md) 
     - [Glossary](./appendix/glossary.md)
     - [Bibliography](./appendix/bibliography.md)
+
+[Postscript](./postscript.md)

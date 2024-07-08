@@ -3,7 +3,8 @@
 I plan this book to contain the following sessions: 
 
 - Introduction 
-    - How to use this book
+    - Encouragetment to learn coding
+    - How to use this book 
     - Pre-requisite: set up a computer
         - Chosing hardware and software 
         - I recommend Linux
@@ -49,3 +50,4 @@ I plan this book to contain the following sessions:
 - Operating System 
 - Computer Security 
 - Theoretical Computer Science
+- Postscript

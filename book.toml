@@ -5,10 +5,25 @@ multilingual = false
 src = "src"
 title = "Guide for Self-studying Coding"
 
+[build]
+create-missing = true # This is kept for convenience, but CI sets it to false
+use-default-preprocessors = false
+extra-watch-dirs = ["po"]
+
+[preprocessor.links]
+
+[preprocessor.gettext]
+command = "cargo run -p i18n-helpers --bin mdbook-gettext --locked --release --"
+before = ["links"]
+
+
 [output.html]
 mathjax-support = true
 curly-quotes = true
 additional-css = [
   "theme/css/speaker-notes.css",
 ]
-fold.enable = true
+print = { enable = true }
+fold = { enable = true, level = 0 }
+git-repository-url = "https://github.com/harryhanYuhao/guide_for_self_studying_programming"
+

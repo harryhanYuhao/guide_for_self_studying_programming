@@ -1,6 +1,6 @@
 # Postscript
 
-> Postscript comes from the Latin phrase post scriptum, meaning those written in the end.
+> Postscript comes from the Latin phrase post scriptum, meaning written in the end.
 
 I designed this book to serve as a guide instead of the definitive source of learning.
 This means it will not contain every detail one needs to know; instead, it surveys the areas the author deemed important for a beginner and provides author's comments with information for furthur study. 

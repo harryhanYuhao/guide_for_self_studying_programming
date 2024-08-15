@@ -8,7 +8,7 @@ Hardware is the keyboard, the chips, and anything that exist physically. Softwar
 
 ### What is Operating System
 
-It seems worthy to first clear up some misconception on computer software, especially the operating system (OS).
+Let us first clear up some misconception on computer software, especially the operating system (OS).
 
 #### Operating System is Independent from Computer Hardware:
 
@@ -28,15 +28,17 @@ The correct definition for operating system is, to put simply
 
 > \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
 
-Operating system is magical software that allow the users to send instruction to the silicon chips by typing the keyboard, and display chips' respond by sound and display.
+Operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, and return the chips' respond in human-readable forms.
+Without operating system, it is impossible for human to interact with the computer, and the computer will become no more useful than a brick.
+
 Common operating systems include Windows, MacOS, and the series of Linux distributions. 
 There are many less known ones. The BSD and Solaris belongs to the Unix family. 
 AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
 Minix is another one designed for teaching. There are too many to be listed here.
 
-Each of the operating system has their pecularities. 
-
 ### Choosing Operating System
+
+Most people choose MacOS and Windows for no good reason except they are the preinstalled one. 
 
 ## Hardware: what constitutes a computer
 
@@ -47,12 +49,12 @@ If you are familiar with these terms: CPU, memory, ram, motherboard, cache, and 
 
 Computer hardware can be divided into two groups: peripheral hardware and core hardware. 
 Peripheral hardware includes the screen, keyboard, mouse, speaker, trackpad, etc. 
-A computer can function properly without peripheral hardwares. Yes, without a screen or keyboard, you may not interact with the computer, but the computer can still run perfectly. 
-In comparison, a computer will not function without core hardware, which includes the CPU, GPU, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer. These [^Low Level Stuff] for how computer hardware works.
+A computer can function properly without peripheral hardwares. Yes, without a screen or keyboard, you may not interact directly with the computer, but the computer can still run perfectly and can receive instructions in other forms, such as via the internet. 
+In comparison, a computer will not function without core hardware, which includes the CPU, GPU, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer. These [^Low Level Stuff] for how computer hardware works in low level.
 
 Peripheral hardware matters little: choose the one that looks the best.
-It is on the core hardware that most computers differ the most. 
-I refer to you various sources on internet for advices on choosing a commercially available hardware[^Internet_Choosing_Hardware].
+It is on the core hardware that most computers differ. 
+I refer to you various sources on internet for pragmatic advices on choosing a commercially available hardware[^Internet_Choosing_Hardware].
 Here, let us focus on how they function.
 
 ### Central Processing Unit (CPU)
@@ -64,14 +66,14 @@ Here are some terms that describes a CPU:
 1. Architecture. 
 
     The architecture describes the low level circuit design of the CPU. 
-    Some would say the architecture of the computer when he means the architecture of the CPU.
+    <!-- Some would say the "architecture of the computer" when he means the "architecture of the CPU of the computer". -->
     For most user, the architecture only matters when installing softwares, as some softwares may not work on certain architectures. 
 
-    Colloquially, architecture is synonymous to the term instruction set, which defines how the software interacts with the CPU (i.e., the API). Common instruction set includes x86-64, Arm, Mips, Risc-V, and LoongArch. 
+    Colloquially, the term architecture may be mistaken as the term instruction set, which defines how the software interacts with the CPU (i.e., the API). Common instruction set includes x86-64, Arm, Mips, Risc-V, and LoongArch. 
     Most intel and Amd's CPU are of x86-64 (also known as amd64). Mac's M series chips, chips of most cell phone, and Qualcomm's Snapdragon are of Arm. 
 
     Instruction set is only a abstract definition for how CPU shall function. 
-    It is upto the manufactures to design the CPUs that fullfill the required functions.
+    It is upto the manufactures to design the CPUs to fullfill the standard.
 
     Intel and Amd have jointly developped x86-64 instruction set based on earlier ones for over forty years. 
     This is both a blessing and a curse, as it makes x86 the most popular, stable, and well-supported instruction set, while, for compatibility, some outdated designs have to remain. 
@@ -94,9 +96,9 @@ Here are some terms that describes a CPU:
     Frequency is measured in Hertz, which is times per second.
     The higher the frequency usually means the faster the CPU. 
 
-    The first Intel CPU, Intel 4004, released in 1971, had a frequency of 740 kHz. In 2000 Intel managed to produced Pentium 4, a chip with freqency of 2 GHz, a 2700-time increase over 30 years. 
+    The first Intel CPU, Intel 4004, released in 1971, had a frequency of 740 kHz. In 2000 Intel managed to produced Pentium 4 with the freqency of 2 GHz, a 2700-time increase over 30 years. 
     Since then it became increasingly difficult to further increase the frequency.
-    In 2024, Intel released Core i9-14900KS, whose frequency is 6.2 GHz, only three times of its 2000 predecessor. Yet this chip performs much better than Pentium 4 thanks to better design and innovations in other areas.
+    In 2024, Intel released Core i9-14900KS, with frequency of 6.2 GHz, only three times of its 2000 predecessor. Yet this chip runs more than 1000 times much faster than Pentium 4 thanks to innovations in other areas.
 
 1. Threads, Cores
 
@@ -167,7 +169,7 @@ Two comman benchmarking metrics for storage devices are bandwidth and latency.
 
 Bandwidth (or throughputs), measured in bytes per second, is the maximum amount of data that can be transferred per second. 
 There are two operations for a storage device, read and write, and bandwidth for reading is likely to be higher than writing.
-Moreover, the bandwidth would diminish dramatically when the device needs read and write in short period of time, or the capacity of the device is close to full.
+Moreover, the bandwidth would diminish dramatically when the device needs read and write simultaneously, or the capacity of the device is close to full.
 
 Latency is the time between the CPU sends instruction for retrieving the data and the first byte of data delivered to the CPU.
 
@@ -176,7 +178,7 @@ In reality, however, they are weakly correlated: it is of no use that you can tr
 
 Accurately benchmarking storage devices is very diffiult for two reason. 
 First, the performance of the storage device is unstable. It dependends on the CPU,the design of the motherboard, and the type and content of the data.
-Second, the most of the low level input and output are controlled solely by the hardware and is not accessible to the user or the operating system.
+Second, most of the low level input and output are controlled solely by the hardware and is not accessible to the user or the operating system.
 
 Let us now introduce memory and secondary storage devices, the lower part of the hierarchy.
 
@@ -217,7 +219,7 @@ Their price has dropped dramatically since 2023, thanks to intense market compet
 
 #### Comparison of Time Needed for Various Operations
 
-The following table compares the speed of various memory device and time needed to execute various other operations.
+The following table compares the time needed to execute various operations.
 
 |Event                           | Time (ns) | Time (\\( \mu s\\))| Time (ms) | Scale                  | 
 |--------------------------------|-----------|--------------------| --------- | ---------------------- |
@@ -235,7 +237,7 @@ The following table compares the speed of various memory device and time needed 
 |Send a Packet From Beijing to Edinburgh |   |                    | 500       | \\(1 \times 10^9\\)    |
 |Computer Reboot                 |           |                    | 30,000    | \\(6 \times 10^{10}\\) |
 
-We make sense of these numbers, the following table assumes one CPU cycle to take 0.25 seconds, and enlong the time for other events on the same proportion. 
+To make sense of these numbers, the following table assumes one CPU cycle to take 0.25 seconds, and enlong the time for other events on the same proportion. 
 
 |Computer Event                  | Real Life Event                              | Time          | Scale   | 
 |--------------------------------|--------------------------------------------- | ------------- |-------- |

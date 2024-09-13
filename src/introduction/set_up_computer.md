@@ -8,14 +8,16 @@ Hardware is the keyboard, the chips, and anything that exist physically. Softwar
 
 ### What is Operating System
 
-Let us first clear up some misconception on computer software, especially the operating system (OS).
+Let us first clear up some misconception on computer software, especially on the operating system (OS).
 
 #### Operating System is Independent from Computer Hardware:
 
-Many think software and hardware are inseparable, as summarised in the phrase: "I want to buy a Windows Computer". 
+Many think operating system and hardware are inseparable, as summarised in the phrase: "I want to buy a Windows Computer". 
+
 This is a misconception.
+
 What the speaker means is he wants to buy a computer that runs the Windows Operating System, but in fact, the computer can run any operating system he likes; let it be linux, BSD, or even MacOS[^OS_Nomenclature].
-This misconception is rooted from the modern commercial practise to sell the computer hardware with pre-installed operating system. Apple is more egregious as to allow a computer to run MacOS if and only if it is made by Apple. [^Windows_On_Mac]
+This misconception is rooted from the modern commercial practise to sell the computer hardware with pre-installed operating system and softwares. Apple is more egregious as to allow a computer to run MacOS if and only if it is made by Apple. [^Windows_On_Mac]
 
 #### Operating System is Different from the User Interface (UI)
 
@@ -38,7 +40,14 @@ Minix is another one designed for teaching. There are too many to be listed here
 
 ### Choosing Operating System
 
-Most people choose MacOS and Windows for no good reason except they are the preinstalled one. 
+The most popular operating systems for personal computer is MacOS and Windows. Their popularity may be attributed to the fact that they are the only preinstalled operating system for most commercially available computers.
+
+In comparison, in the field of professional servers, Linux is popular, while MacOS and Windows are rare.
+Most corporations prefer Linux because it is a free, robust, stable, user friendly, and open sourced operating system. 
+
+Linux can also be used for personal computer. If you have not used Linux before, I encourage all to try it.
+
+Check [Choosing OS](./choosing_os.md) session for more.
 
 ## Hardware: what constitutes a computer
 
@@ -187,9 +196,10 @@ Let us now introduce memory and secondary storage devices, the lower part of the
 Random Access Memory, or RAM, is in the middle layer of the memory hierarchy. 
 Slower and cheaper than cache, but faster and more expensive than hard disks.
 
-RAM is not a static storage device, which means all data stored in RAM will be lost after powering off. 
+RAM is volatile storage device; this measn all data stored in RAM will be lost after powering off. 
 
-When computers are executing some program stored in SSD, it will first load all instructions and data into RAM. The exact behaviour will depend on operating system.
+When computers are executing some program stored in SSD, it will first load all instructions and data into RAM for faster retrieval. 
+The exact behaviour will depend on operating system.
 
 <!-- TODO: DDR, SDDR, GDDR, etc -->
 

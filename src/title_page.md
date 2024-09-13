@@ -7,12 +7,13 @@ The targeted audience are those with little or no experience of coding, and thos
 The only prerequisites are a personal computer and the determination to learn.
 
 The abundance of information on the internet makes self-studying computer science possible, but it does not make it easy.
-The information on the internet are disorganised and unequal on quality, some blatantly false. 
-It is impossible for beginners to organise the informations, judge their correctness, and make plans on what to study next. 
-This book will do exactly these. 
-Specifically, it will help you in two ways
-1. it will teach you enough knowledge so that you can study computer science by yourself,
-1. it will gives you enough resource for self studying.
+The information on the internet are disorganised and unequal on quality, some even blatantly false. 
+It is impossible for beginners to organise the informations, judge their correctness, and make coherent and sensible plans for what to learn next. 
+This book will help you do exactly these. 
+
+Specifically, it will help you in two ways: 
+1. It will teach you enough knowledge so that you can study computer science by yourself,
+1. It will provides for you enough recourses for further study.
 
 If you do not plan to study computer science, I encourage you to try.
 Computer science and related technologies has influenced every aspect of our lives.

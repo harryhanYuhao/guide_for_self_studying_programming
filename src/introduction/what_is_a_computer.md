@@ -1,70 +1,62 @@
-# Set up a Computer
+# What is a Computer
 
-To learn coding one must have a computer that fits his need. This means one shall choose wisely the hardware and the software.
+A computer consists of hardware and software. Hardware includes the keyboard, the chips, and anything that exists physically. 
+Hardware alone does not help much, as human can not understand eletronic signals. This is where software comes in, which helps human communicate with the hardware.
 
-Hardware is the keyboard, the chips, and anything that exist physically. Software is everything else, including the operating system, the integrated development environment (IDE), etc.
+## Software 
 
-## Choosing Software 
+There are two types of software: system software and application software. 
+Operating system is system software. It works closely with the hardware and provide interface on which other software can operate.
 
-### What is Operating System
+Application software are the ones user can use directly. They often depends on the system software for operation.
 
-Let us first clear up some misconception on computer software, especially on the operating system (OS).
+### Operating System
 
-#### Operating System is Independent from Computer Hardware:
+Operating system (OS) is likely the most important software. It helps human and other softwares communicate with the computer hardware. Windows, MacOS, Ubuntu, Android, iOS are some of the well-known operating system. 
 
-Many think operating system and hardware are inseparable, as summarised in the phrase: "I want to buy a Windows Computer". 
-
-This is a misconception.
-
-What the speaker means is he wants to buy a computer that runs the Windows Operating System, but in fact, the computer can run any operating system he likes; let it be linux, BSD, or even MacOS[^OS_Nomenclature].
-This misconception is rooted from the modern commercial practise to sell the computer hardware with pre-installed operating system and softwares. Apple is more egregious as to allow a computer to run MacOS if and only if it is made by Apple. [^Windows_On_Mac]
-
-#### Operating System is Different from the User Interface (UI)
-
-The second misconception is that operating system determines computer's appearence, as summrised in the phrase: "I like MacOS because its UI is pretty". 
-Operating system is utterly unrelated to the UI or apperence, although certain operating systems are distributed with a default UI.
-
-#### Definition of Operating System
-
-The correct definition for operating system is, to put simply
+To put precisely:
 
 > \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
 
 Operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, and return the chips' respond in human-readable forms.
-Without operating system, it is impossible for human to interact with the computer, and the computer will become no more useful than a brick.
+Without operating system, it is impossible for human to interact with the computer, and the computer will of no use.
 
 Common operating systems include Windows, MacOS, and the series of Linux distributions. 
 There are many less known ones. The BSD and Solaris belongs to the Unix family. 
 AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
-Minix is another one designed for teaching. There are too many to be listed here.
+Minix is another one designed for teaching. 
 
-### Choosing Operating System
+Operating system, however, is **not**
 
-The most popular operating systems for personal computer is MacOS and Windows. Their popularity may be attributed to the fact that they are the only preinstalled operating system for most commercially available computers.
+1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
+1. related to user interface and appearence. 
 
-In comparison, in the field of professional servers, Linux is popular, while MacOS and Windows are rare.
-Most corporations prefer Linux because it is a free, robust, stable, user friendly, and open sourced operating system. 
+### Choosing an Operating System
 
-Linux can also be used for personal computer. If you have not used Linux before, I encourage all to try it.
+The most popular operating systems for personal computer is MacOS and Windows. They are also the only preinstalled operating system for most commercially available computers.
 
-Check [Choosing OS](./choosing_os.md) session for more.
+Linux is overwhelmingly more popular, however, among professional servers and super computers. 
+Since 2017, all of the top 500 super computer runs on Linux.
+
+Linux is also suitable for personal use.
+
+If you have not used Linux before, I encourage all to try it, as it is a superior OS for writing code in most circumstances.
+
+Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
 
 ## Hardware: what constitutes a computer
 
-For a beginner any functional hardware will do. 
-However, to make a better choice when buying the computer, one must understand how different parts of computer work together.
+Computer hardwares are the phyical objects which constitutes the computer in the real world. Most of the computer hardwares are made of comlex electronic circuits made of semiconductors. 
+Those circuits, in theory, are no different from the battery-and-wire circuit one could make on a circuit board, but in a much smaller scale.
 
-If you are familiar with these terms: CPU, memory, ram, motherboard, cache, and memory hierarchy, skip this chapter.
-
-Computer hardware can be divided into two groups: peripheral hardware and core hardware. 
+Computer hardware can be divided into two categories: peripheral hardware and core hardware. 
 Peripheral hardware includes the screen, keyboard, mouse, speaker, trackpad, etc. 
 A computer can function properly without peripheral hardwares. Yes, without a screen or keyboard, you may not interact directly with the computer, but the computer can still run perfectly and can receive instructions in other forms, such as via the internet. 
-In comparison, a computer will not function without core hardware, which includes the CPU, GPU, ram, motherboard, disk, etc. Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer. These [^Low Level Stuff] for how computer hardware works in low level.
+In comparison, a computer will not function without core hardwares, which includes the CPU, GPU, ram, motherboard, disk, etc. 
+Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer, these [^Low Level Stuff] for how computer hardware works in the electronic circuits level.
 
-Peripheral hardware matters little: choose the one that looks the best.
-It is on the core hardware that most computers differ. 
-I refer to you various sources on internet for pragmatic advices on choosing a commercially available hardware[^Internet_Choosing_Hardware].
-Here, let us focus on how they function.
+Peripheral hardware matters little for our purpose.
+Let us focus intead on how core hardwares function.
 
 ### Central Processing Unit (CPU)
 
@@ -82,7 +74,7 @@ Here are some terms that describes a CPU:
     Most intel and Amd's CPU are of x86-64 (also known as amd64). Mac's M series chips, chips of most cell phone, and Qualcomm's Snapdragon are of Arm. 
 
     Instruction set is only a abstract definition for how CPU shall function. 
-    It is upto the manufactures to design the CPUs to fullfill the standard.
+    It is up to the manufactures to design the CPUs to fullfill the standard.
 
     Intel and Amd have jointly developped x86-64 instruction set based on earlier ones for over forty years. 
     This is both a blessing and a curse, as it makes x86 the most popular, stable, and well-supported instruction set, while, for compatibility, some outdated designs have to remain. 
@@ -172,7 +164,7 @@ Hard disk is the cheapest, largest, and the slowest.
 <!-- TODO: state TABLE NAME -->
 Please see the table in the next session for comparison of the speed of caches, RAM, and hard disk, and the time for CPU to execute various other tasks.
 
-#### Characterising Performance of Storage Devices: Bandwidth
+#### Characterising Performance of Storage Devices: Bandwidth and Latency
 
 Two comman benchmarking metrics for storage devices are bandwidth and latency.
 

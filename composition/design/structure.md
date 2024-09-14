@@ -23,14 +23,14 @@ I plan this book to contain the following sessions:
         - grep 
         - find 
         - fd 
-        - fdgrep 
+        - ripgrep 
     - Linux the open sourced
 - Acquiring a Programming language
     - c
     - c++ 
+    - rust
     - java 
     - kotlin
-    - rust
     - haskell
     - misc 
         - go 
@@ -45,9 +45,10 @@ I plan this book to contain the following sessions:
     - Assembly
     - Binary files are not scary
 - Graphics and game development
-- Web and SAAS development
 - Network And Communication 
+- Web and SAAS development
 - Operating System 
 - Computer Security 
 - Theoretical Computer Science
+- Pointers for Further study
 - Postscript

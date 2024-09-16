@@ -1,10 +1,60 @@
 # Choosing Operating System
 
-Every user has the righhahas to install any operating system on his computer hardware. 
-
 This section compares the pro and cons of three common operating system, MacOS, Windows, and Linux in a user's perspective.
 
-## Windows
+First, let us know more about what constitutes a operating system. 
+
+## Operating System and Desktop Environment
+
+In the last session we said there are two kinds of software, system software and application software. 
+System software is any software that is related to the operating system and provide support for application softwares. 
+Application softwares are those a user would use directly, such as the browser and the text editor.
+
+The operating system can also be divided into two parts: the kernel and utility softwares. (This is a great simplification. For more, see [Operating System](../os/os.md) chapter) 
+
+Kernel is the core of the operating system that communicates directly with the hardware. This is the lowest level of a software. 
+
+A functional operating system also needs many utility softwares, such as the one that allows users to login, the one that controls the audio, another that connects to the internet, etc. 
+Some of them are absolutely essential without which an operating system will fail.
+These are also considered a part of the operating system, and I call them operating system utility software. 
+Examples include [gnu-binutils](https://www.gnu.org/software/binutils/) and [busybox](https://www.busybox.net/about.html).
+
+Some other softwares are bundled with the operating system and provide important utilities. 
+However, they may be uninstalled without affecting the operating system. 
+One example is [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/), a software that controls the audio of the computer. 
+An operating system without pulse audio still works but will make no sounds.
+
+There are much grey area and debates on if a software can be considered as part of the kernel, part of the operating system utilities, or just a application software. 
+For example, web browsers on most operating system is an application software. 
+On ChromeOS, however, the browser may be considered an operating system utility software, as every application is launched by the browser, which is the only user-interface.  
+
+Let us demonstrate the kernel, operating system utility, and application software with the following list:
+
+1. You turn on the computer by pressing the power button: you are working directly with the hardware;
+1. The logo of your computer brand shows up: the motherboard is powered on, kernel is being loaded onto ram;
+1. The logo of your operating system shows up, sometimes with many lines of messages: the kernel is loaded and under initialisation;
+1. Start up screen shows up: the operating system is fully loaded; 
+1. You entered the username and password: operating system utilities are trying to authenticate your identity;
+1. You enterred the desktop and openned up the browser: you are now interacting with application softwares.
+
+### Desktop Environment
+
+Consider a common senario when using a computer.
+You are likely to use the mouse to click on some applications, after which the application will be opened in a new window. 
+You can drag the window with your mouse and close it by clicking the cross sign. 
+The software that controls your mouse, the windows, and how they interact is called the *Desktop Environment*. 
+Sometimes
+
+
+Windows and MacOS bundles the kernel and the untility software together.
+Linux, however, is only a kernel. 
+A linux distribution is an operating system that uses the linux kernel. 
+There are many linux distribution, including Ubuntu, Fedora, Arch, etc. 
+They all use the linux kernel (they may use different version of the kernel) but vastly different utility softwares.
+
+## Comparison
+
+### Windows
 
 Windows is a working, widely available, and stable system developped by Microsoft. Its biggest advantage is that it is ready to use out of the box and it is compatible with almost any software.
 
@@ -25,7 +75,7 @@ Recall works by taking the snapshots of the computer periodically and process th
 
 In conclusion, Microsoft have total power over Windows, not the user.
 
-## MacOS
+### MacOS
 
 MacOS is Posix Compliant Unix system developped by Apple. It can only be used on Apple computers.
 Many consumer appraise MacOS for its stability, beautiful apperance, and convenient interaction with other Apple devices. 
@@ -39,11 +89,14 @@ However, the drawback is significant:
 Similar to Windows, Apple has the full control of MacOS, and users do not. 
 Apple is also seemed to abuse its unchecked rights:
 
-1. Apple has secretly underclocked older devices (making them slower). Many suspected Apple did it to encourage consumers to buy new Apple products. Apple refuted this statement but agreed to pay 113 million to settle it. [^Battery Gate]
+1. Apple has secretly underclocked older devices (making them slower) without notifying users. 
+Many suspected Apple did it to encourage consumers to buy new Apple products. Apple refuted this statement but agreed to pay 113 million to settle it. [^Battery Gate]
+1. Apple's lack of compatibility with many games seems to be self afflicted. Apple volunteerly stopped the support for OpenGL and Vulkan to
+<!-- TODO: -->
 
 In the end, appart from its apperance, MacOS is not so different from windows, except it is created by Apple.
 
-## Linux
+### Linux
 
 [^Sharing Data]:[Microsoft new privacy statement](https://edri.org/our-work/microsofts-new-small-print-how-your-personal-data-abused/)
 [Microsoft privacy statement](https://privacy.microsoft.com/en-gb/privacystatement)

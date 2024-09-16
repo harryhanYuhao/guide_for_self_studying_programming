@@ -8,6 +8,7 @@
 - [Linux Tour](./let_there_be_linux/let_there_be_linux.md)
     - [Installing Linux](./introduction/obtaining_linux.md)
     - [Linux, Unix?](./introduction/linux_unix.md)
+- [Operating System](./os/os.md)
 - [Appendix](./appendix/appendix.md) 
     - [Buying a Computer](./appendix/advice_on_buying_a_computer.md)
     - [Glossary](./appendix/glossary.md)

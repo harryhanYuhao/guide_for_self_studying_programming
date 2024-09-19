@@ -1,58 +1,22 @@
 # What is a Computer
 
-A computer consists of hardware and software. Hardware includes the keyboard, the chips, and anything that exists physically. 
-Hardware alone does not help much, as human can not understand eletronic signals. This is where software comes in, which helps human communicate with the hardware.
+The computer is such a powerful and magical machine, that many fail to reailise that it is just made from preconfigured electronic circuits.
 
-## Software 
-
-There are two types of software: system software and application software. 
-Operating system is system software. It works closely with the hardware and provide interface on which other software can operate.
-
-Application software are the ones user can use directly. They often depends on the system software for operation.
-
-### Operating System
-
-Operating system (OS) is likely the most important software. It helps human and other softwares communicate with the computer hardware. Windows, MacOS, Ubuntu, Android, iOS are some of the well-known operating system. 
-
-To put precisely:
-
-> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
-
-Operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, and return the chips' respond in human-readable forms.
-Without operating system, it is impossible for human to interact with the computer, and the computer will of no use.
-
-Common operating systems include Windows, MacOS, and the series of Linux distributions. 
-There are many less known ones. The BSD and Solaris belongs to the Unix family. 
-AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
-Minix is another one designed for teaching. 
-
-Operating system, however, is **not**
-
-1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
-1. related to user interface and appearence. 
-
-### Choosing an Operating System
-
-The most popular operating systems for personal computer is MacOS and Windows. They are also the only preinstalled operating system for most commercially available computers.
-
-Linux is overwhelmingly more popular, however, among professional servers and super computers. 
-Since 2017, all of the top 500 super computer runs on Linux.
-
-Linux is also suitable for personal use.
-
-If you have not used Linux before, I encourage all to try it, as it is a superior OS for writing code in most circumstances.
-
-Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
+The electronic circuits are hardwares, and all the rules the hardwares follow are the software.
 
 ## Hardware: what constitutes a computer
 
-Computer hardwares are the phyical objects which constitutes the computer in the real world. Most of the computer hardwares are made of comlex electronic circuits made of semiconductors. 
+Computer hardwares are the phyical objects which constitutes the computer in the real world. 
+Most of the computer hardwares are made of comlex electronic circuits made of semiconductors. 
 Those circuits, in theory, are no different from the battery-and-wire circuit one could make on a circuit board, but in a much smaller scale.
 
 Computer hardware can be divided into two categories: peripheral hardware and core hardware. 
+
 Peripheral hardware includes the screen, keyboard, mouse, speaker, trackpad, etc. 
-A computer can function properly without peripheral hardwares. Yes, without a screen or keyboard, you may not interact directly with the computer, but the computer can still run perfectly and can receive instructions in other forms, such as via the internet. 
-In comparison, a computer will not function without core hardwares, which includes the CPU, GPU, ram, motherboard, disk, etc. 
+A computer can function properly without peripheral hardwares. 
+Yes, without a screen or keyboard, you may not interact directly with the computer, but the computer can still run perfectly and can receive instructions in other forms, such as via the internet. 
+In comparison, a computer will not function without _**core hardwares**_, which includes the CPU, GPU, ram, motherboard, disk, etc. 
+
 Check these videos[^Assembling Computer] to see how different hardwares are assembled in a computer, these [^Low Level Stuff] for how computer hardware works in the electronic circuits level.
 
 Peripheral hardware matters little for our purpose.
@@ -60,7 +24,8 @@ Let us focus intead on how core hardwares function.
 
 ### Central Processing Unit (CPU)
 
-CPU is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the CPU. It is CPU that determines how smoothly and fast the computer runs in most circumstances.
+CPU is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the CPU.
+CPU is the most important factor that determines how smoothly and fast the computer runs.
 
 Here are some terms that describes a CPU:
 
@@ -78,6 +43,7 @@ Here are some terms that describes a CPU:
 
     Intel and Amd have jointly developped x86-64 instruction set based on earlier ones for over forty years. 
     This is both a blessing and a curse, as it makes x86 the most popular, stable, and well-supported instruction set, while, for compatibility, some outdated designs have to remain. 
+
     Apple's M series chips use a special Arm instruction set developped by Apple. 
     Apple designs M series chips to be power efficient, and one way to acheive it is to reduce the chip's 'complexity by removing legacy support. 
     It is not of surprise, as a result, M series computer are more power efficient in the price of all softwares have to be rewritten for it.
@@ -271,8 +237,56 @@ In fact, most graphical algorithms takes the form of matrices. Thus comes the na
 In recent years people found that GPU can execute machine learning algorithms more efficiently than CPU. 
 It shall be of no surprise as machine learning utilises a lot of linear algebra and statistical algorithms.  
 
-### Other Parts of the Computer
+### Other Hardwares
 
+
+## Software 
+
+Computer hardwares are everything that exists physically, and the softwares are everthing else. 
+
+Examples of softwares include:
+
+1. The web browser, pdf viewer, music players, python interpreter, etc. These are the application software a user interacts with directly;
+1. The software allows you to open, close, resize, and organsize application windows with your mouse and keyboard. This software is called a desktop environment, on which every applications software depends on;
+1. The one that controls your mouses and keyboards. These are device drivers.
+1. The one that manage the cpu, memory, the disk, etc. They are the operating system and system softwares. Every other software depends on them.
+
+This is the _**software hierarchy**_. Lower level software provides support for higher level ones. 
+At the lowest level is the operarting system, which communicate directly with the hardware. 
+At the highest level is application softwares, with which the users interact directly.
+
+### Operating System
+
+Operating system (OS) is likely the most important software. 
+
+Its definition is:
+
+> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
+
+Operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, and return the chips' respond in human-readable forms.
+
+Common operating systems include Windows, MacOS, and the series of Linux distributions. 
+There are many less known ones. The BSD and Solaris belongs to the Unix family. 
+AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
+Minix is another one designed for teaching. 
+
+Operating system, however, is **not**
+
+1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
+1. related to user interface and appearence. 
+
+### Choosing an Operating System
+
+The most popular operating systems for personal computer is MacOS and Windows. They are also the only preinstalled operating system for most commercially available computers.
+
+Linux is overwhelmingly more popular, however, among professional servers and super computers. 
+Since 2017, all of the top 500 super computer runs on Linux.
+
+Linux is also suitable for personal use.
+
+If you have not used Linux before, I encourage all to try it, as it is a superior OS for writing code in most circumstances.
+
+Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
 
 
 [^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.

@@ -8,12 +8,12 @@ The only prerequisites are a personal computer and the determination to learn.
 
 The abundance of information on the internet makes self-studying computer science possible, but it does not make it easy.
 These information is disorganised and unequal on quality, with some even blatantly false. 
-It is impossible for beginners to organise the informations, judge their correctness, overcome all the troubles of digesting them, and make coherent plans for what to learn next. 
-This book will help you do exactly these. 
+It is impossible for beginners to organise the informations, judge their correctness, overcome all the troubles of understanding them, and make coherent plans for what to learn next. 
+This book will help you conquer these problems.
 
 Specifically, it will help you in two ways: 
 1. It will teach you enough knowledge so that you can study computer science by yourself,
-1. It will give you enough recourses for further study.
+1. It will provide for you enough recourses for further study.
 
 If you do not plan to study computer science, I encourage you to try.
 Computer science and related technologies has influenced every aspect of our lives.
@@ -26,7 +26,7 @@ The content is prereleased on
 [book.yetin.net](http://book.yetin.net) and 
 [Github](https://github.com/harryhanYuhao/guide_for_self_studying_programming).
 
-All criticisms, suggestions, and __*contribution*__ are warmly welcomed
+All suggestions and _**criticisims**_ are warmly welcomed
 as issues on
 [Github](https://github.com/harryhanYuhao/guide_for_self_studying_programming).
 

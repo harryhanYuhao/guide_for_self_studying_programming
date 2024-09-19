@@ -2,15 +2,12 @@
 
 ## Step 0: Setting Up a Computer
 
-To learn computer science you first need to choose a computer and an operating system. 
+To learn computer science you need a computer.
+Any functional computer will be enough to get started.
+For practical advices on buying a computer, see [appendix](../appendix/advice_on_buying_a_computer.md).
 
-If you have a functioning computer, that will be enough. 
-If you want some advice on buying a new computer hardware, see [appendix](./appendix/advice_on_buying_a_computer.md).
-
-Regardless what type of computer you have, I encourage you to try the Linux operating system. See [Choosing OS](../introduction/choosing_os.md).
-
-Regardless of your preference, to make a wise decision, you need to know the basics concepts of how different parts of a computer works. 
-[what is a computer](./what_is_a_computer.md) will help you with it.
+It is, nevertheless, always helpful to learn how each piece of the electronics and softwares work together to produce the powerful machine that we call a computer today.
+See [what is a computer](./what_is_a_computer.md) for an introduction.
 
 ## Step 1: Learn the Basics
 

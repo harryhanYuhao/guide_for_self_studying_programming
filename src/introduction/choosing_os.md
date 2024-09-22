@@ -2,17 +2,14 @@
 
 This section compares the pro and cons of three common operating system, MacOS, Windows, and Linux in a user's perspective.
 
-First, let us know more about what constitutes a operating system. 
+Operating system is the lowest level software in a computer that communicates directly with the hardware and provides support for all other softwares. 
+
+Operating system, however, is _**not**_:
+
+1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
+1. related to user interface and appearence. 
 
 ## Operating System and Desktop Environment
-
-In the last session we said there are two kinds of software, system software and application software. 
-System software is any software that is related to the operating system and provide support for application softwares. 
-Application softwares are those a user would use directly, such as the browser and the text editor.
-
-The operating system can also be divided into two parts: the kernel and utility softwares. (This is a great simplification. For more, see [Operating System](../os/os.md) chapter) 
-
-Kernel is the core of the operating system that communicates directly with the hardware. This is the lowest level of a software. 
 
 A functional operating system also needs many utility softwares, such as the one that allows users to login, the one that controls the audio, another that connects to the internet, etc. 
 Some of them are absolutely essential without which an operating system will fail.

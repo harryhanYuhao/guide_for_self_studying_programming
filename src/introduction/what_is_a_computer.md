@@ -6,8 +6,8 @@ The electronic circuits are hardwares, and all the rules the hardwares follow ar
 
 ## Hardware: what constitutes a computer
 
-Computer hardwares are the phyical objects which constitutes the computer in the real world. 
-Most of the computer hardwares are made of comlex electronic circuits made of semiconductors. 
+Computer hardwares are the physical objects which constitutes the computer in the real world. 
+Most of the computer hardwares are made of complex semiconductor electronic circuits.
 Those circuits, in theory, are no different from the battery-and-wire circuit one could make on a circuit board, but in a much smaller scale.
 
 Computer hardware can be divided into two categories: peripheral hardware and core hardware. 
@@ -32,7 +32,7 @@ Here are some terms that describes a CPU:
 1. Architecture. 
 
     The architecture describes the low level circuit design of the CPU. 
-    <!-- Some would say the "architecture of the computer" when he means the "architecture of the CPU of the computer". -->
+    Some would say the "architecture of the computer" when he means the "architecture of the CPU of the computer".
     For most user, the architecture only matters when installing softwares, as some softwares may not work on certain architectures. 
 
     Colloquially, the term architecture may be mistaken as the term instruction set, which defines how the software interacts with the CPU (i.e., the API). Common instruction set includes x86-64, Arm, Mips, Risc-V, and LoongArch. 
@@ -251,33 +251,55 @@ Examples of softwares include:
 1. The one that controls your mouses and keyboards. These are device drivers.
 1. The one that manage the cpu, memory, the disk, etc. They are the operating system and system softwares. Every other software depends on them.
 
-This is the _**software hierarchy**_. Lower level software provides support for higher level ones. 
+This is the _**software hierarchy**_. 
+
+Lower level software provides support for higher level ones. 
 At the lowest level is the operarting system, which communicate directly with the hardware. 
+The operating system and other related low-level software are called *__system software__*.
+
 At the highest level is application softwares, with which the users interact directly.
 
 ### Operating System
 
 Operating system (OS) is likely the most important software. 
 
-Its definition is:
+Its precise definition is:
 
 > \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
 
-Operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, and return the chips' respond in human-readable forms.
+To put it in another way, operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, mouse, etc, and return the chips' respond in human-readable forms.
 
-Common operating systems include Windows, MacOS, and the series of Linux distributions. 
-There are many less known ones. The BSD and Solaris belongs to the Unix family. 
+
+#### Kernel, the Core of the Operating System
+
+Kernel is the most important part of the operating system that has control of (almost) everything in the computer. 
+It provides many abstract and innovative functionalities every other software relies upon that ensure the security, speed, and stability of the computer. 
+
+For example, here are some of the typical subsystems of a kernel:
+
+1. Threads and schedular: Threads is the sequence of instructions that computer shall execute. 
+Each computer program lives on their respective threads. 
+Some program may run on multiple threads. 
+A cpu can only run a dozen concurrently, but thousand of threads may run, seemingly, at a time. 
+To achieve this, the operating system, based on the priority of the program, schedule each thread to run for a short time, switch to another threads, run for another short time, and switch back.
+1. Memory managementL: 
+
+Kernel, like any other software, is written in a programming language (and the assembly). 
+You can check the source code of the most famous open-sourced kernelhere: [Linux Kernel](https://www.kernel.org/).
+
+#### Other parts of the Operating System
+
+#### Choosing an Operating System
+
+There are many operating systems.
+
+The popular operating systems today include Windows, MacOS, and the series of Linux distributions. 
+There are, however, many more less known ones. The BSD and Solaris belongs to the Unix family. 
 AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
 Minix is another one designed for teaching. 
 
-Operating system, however, is **not**
-
-1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
-1. related to user interface and appearence. 
-
-### Choosing an Operating System
-
-The most popular operating systems for personal computer is MacOS and Windows. They are also the only preinstalled operating system for most commercially available computers.
+The most popular operating systems for personal computer is MacOS and Windows. 
+They are also the only preinstalled operating system for most commercially available computers.
 
 Linux is overwhelmingly more popular, however, among professional servers and super computers. 
 Since 2017, all of the top 500 super computer runs on Linux.
@@ -288,6 +310,8 @@ If you have not used Linux before, I encourage all to try it, as it is a superio
 
 Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
 
+
+### Footnotes
 
 [^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
 

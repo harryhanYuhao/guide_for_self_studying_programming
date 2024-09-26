@@ -4,6 +4,15 @@ The computer is such a powerful and magical machine, that many fail to reailise 
 
 The electronic circuits are hardwares, and all the rules the hardwares follow are the software.
 
+<details>
+<summary>Too boring? You may skip this chapter</summary>
+
+This chapter is a brief overview of how each parts of the computer work together. You will understand these things better after you have got your hands dirty.
+
+If you want to start coding right away, skip this and go to [choosing os](../introduction/choosing_os.md) to see why Linux is a better operating system for coding.
+
+</details>
+
 ## Hardware: what constitutes a computer
 
 Computer hardwares are the physical objects which constitutes the computer in the real world. 
@@ -255,9 +264,12 @@ This is the _**software hierarchy**_.
 
 Lower level software provides support for higher level ones. 
 At the lowest level is the operarting system, which communicate directly with the hardware. 
+At the highest level is application softwares, with which the users interact directly. 
+
 The operating system and other related low-level software are called *__system software__*.
 
-At the highest level is application softwares, with which the users interact directly.
+Application software can not access the memory or send a instruction to cpu directly; instead, it make such requests to the system software, which then communicate directly with the hardware, and returns the required informations back to the application software.
+
 
 ### Operating System
 
@@ -269,36 +281,76 @@ Its precise definition is:
 
 To put it in another way, operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, mouse, etc, and return the chips' respond in human-readable forms.
 
+Operating system, however, is _**not**_:
+
+1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
+1. related to user interface and appearence. 
 
 #### Kernel, the Core of the Operating System
 
-Kernel is the most important part of the operating system that has control of (almost) everything in the computer. 
+Kernel is the most important part of the operating system that has control of almost everything in the computer. 
 It provides many abstract and innovative functionalities every other software relies upon that ensure the security, speed, and stability of the computer. 
 
-For example, here are some of the typical subsystems of a kernel:
+Here are some of the typical subsystems of a kernel:
 
-1. Threads and schedular: Threads is the sequence of instructions that computer shall execute. 
-Each computer program lives on their respective threads. 
-Some program may run on multiple threads. 
-A cpu can only run a dozen concurrently, but thousand of threads may run, seemingly, at a time. 
-To achieve this, the operating system, based on the priority of the program, schedule each thread to run for a short time, switch to another threads, run for another short time, and switch back.
-1. Memory managementL: 
+1. Threads and [scheduler](https://docs.kernel.org/scheduler/index.html): Thread is the sequence of instructions that computer shall execute. 
+Each computer program lives on its respective thread. 
+Some program may spawn multiple threads for parallel execution. 
+A cpu can only run a dozen threads concurrently, but thousand of them may be waiting to be executed at a time.
+To solve this problem, the scheduler, as part of the kernel, based on the priority of the program, schedules the cpu to run certain threads for a short time, switch to other threads, run for another short time, and switch back. 
+In a user's perspective, thousands of programs may seem to run concurrently.
+1. [Memory management](https://docs.kernel.org/mm/index.html): It is common that a program requests a large space of memory at the start of execution, but will only use them later, with some memory staying unused for the whole duration.
+It is a lot of waste if the memory is allocated at the time of request.
+Virtual memory is invented to solve this problem. This is how it works: at the start of execution each thread is allocated an unlimited amount of virtual memory, and only at the time of use these virtual memory is mapped to the phsycial RAM. (The full scheme is much more complicated)
 
-Kernel, like any other software, is written in a programming language (and the assembly). 
-You can check the source code of the most famous open-sourced kernelhere: [Linux Kernel](https://www.kernel.org/).
+The kernel, as magical as it seems, is written in programming languages just like any other softwares.
+The kernels of Windows, Linux, and MacOS are all written in [C](../lets_write_code/c.md) and [assembly language](../lets_write_code/assembly.md).
+Currently, there is attempt to write the kernel in [rust](../lets_write_code/rust.md). 
+
+You can check the source code of the most famous open-sourced kernel here: [Linux Kernel](https://www.kernel.org/).
 
 #### Other parts of the Operating System
 
-#### Choosing an Operating System
+Many utility softwares, besides the kernel, are necessary for a functioning computer. 
+These softwares are system softwares. 
+Some of the system softwares are considered part of the operating system.
 
-There are many operating systems.
+For example:
 
-The popular operating systems today include Windows, MacOS, and the series of Linux distributions. 
+1. A bootloader to load the operating system when the computer is booting up;
+1. Various device drivers for keyboards, mice, usbs, wifi, gpu, etc;
+1. The desktop environment, which is a series of software that controls the windows and graphical output of the computer,
+1. Some [utility software](https://www.gnu.org/software/binutils/) for assemble the assembly, searching symbols, linking object files, managing archives, etc.
+
+Some softwares seem mundane, but are essential:
+
+1. An application for user login;
+1. A software to create and delete files and directory,
+
+Many operating systems ship with these system softwares. As they are incorporated into the OS very closely, many consider them a part of the operating system.
+
+There are much debates on if a software can be considered a system software or an application software. 
+For example, web browsers on most operating system is an application software. 
+On ChromeOS, however, the browser may be considered an operating system utility software, as every application is launched by the browser, which acts as the only user-interface.  
+
+The following list shows which level of software the user is interacting with when booting up the computer.
+
+1. You turn on the computer by pressing the power button: you are working directly with the hardware;
+1. The logo of your computer brand shows up: the motherboard is powered on, kernel is being loaded onto ram (likely init ram file system);
+1. The logo of your operating system shows up, sometimes with pages of logs: the kernel is loaded and under initialisation;
+1. Start up screen shows up: the operating system is fully loaded; 
+1. You entered the username and password: a system software is trying to authenticate your identity;
+1. You enterred the desktop and openned up the browser: you are now working with application softwares.
+
+#### Examples of Operating System
+
+The most popular operating systems today include Windows, MacOS, and the series of Linux distributions. 
 There are, however, many more less known ones. The BSD and Solaris belongs to the Unix family. 
 AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
 Minix is another one designed for teaching. 
 
 The most popular operating systems for personal computer is MacOS and Windows. 
+
 They are also the only preinstalled operating system for most commercially available computers.
 
 Linux is overwhelmingly more popular, however, among professional servers and super computers. 
@@ -306,7 +358,12 @@ Since 2017, all of the top 500 super computer runs on Linux.
 
 Linux is also suitable for personal use.
 
-If you have not used Linux before, I encourage all to try it, as it is a superior OS for writing code in most circumstances.
+If you have not used Linux before, you should try it, as it is an objectively superior OS for writing code in most circumstances.
+
+#### Choosing an Operating System for Personal Use
+
+The short answer is to choose Linux for coding, Windows to play games, and Mac to waste some money.
+
 
 Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
 

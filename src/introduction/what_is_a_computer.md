@@ -16,7 +16,7 @@ If you want to start coding right away, skip this and go to [choosing os](../int
 ## Hardware: what constitutes a computer
 
 Computer hardwares are the physical objects which constitutes the computer in the real world. 
-Most of the computer hardwares are made of complex semiconductor electronic circuits.
+Most of the computer hardwares are made of complex electronic circuits with semiconductors.
 Those circuits, in theory, are no different from the battery-and-wire circuit one could make on a circuit board, but in a much smaller scale.
 
 Computer hardware can be divided into two categories: peripheral hardware and core hardware. 
@@ -92,7 +92,6 @@ Here are some terms that describes a CPU:
     Data are stored in memory (RAM) and storage device (SSD).
     Retrieving data from memory may take thousands of CPU cycles, but it only takes one cycle to execute it. 
     Cache was invented to solve this problem.
-    (Here by time taken we mean Latency. Check memory hierarchy session for more.)
 
     This is how caches work: when CPU is to retrieve data, it predicts data required for the subsequent operations and stored them in the cache. 
     CPU can retrieve data from cache super fast, usually under 10 or 100 cycles. 
@@ -370,19 +369,12 @@ Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux
 
 ### Footnotes
 
-[^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
-
-[^Windows_On_Mac]: Macbook made before 2020 running on intel CPU had the option to dual boot windows. 
-It is practically impossible to run any system except MacOS for laptops made after 2020 with a M series chip, because Apple is deliberately untransparent on the design of M series chips to hinder developers of other operating system to adapt to Apple products. [Asahi Linux](https://asahilinux.org) seems to be the only barely working exception. 
-
-[^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).
-
 [^Assembling Computer]: [Assemble the core parts](https://www.youtube.com/watch?v=Mmq_fASrTB4); 
 [Chinese Version](https://www.bilibili.com/video/BV1tu411f7ja/?spm_id_from=333.337.search-card.all.click&vd_source=82fe9c55db42ef82bc704c85e0ace879)
 
 [^Low Level Stuff]: [Branch Education](https://www.youtube.com/@BranchEducation). [Branch Education on Bilibili](https://space.bilibili.com/1778586949).
 
-[^Internet_Choosing_Hardware]: [CPU benchmark](https://www.CPUbenchmark.net/); [Tom's Hardware](https://www.tomshardware.com/reviews/CPU-hierarchy,4312.html); 
+
 
 [^Intel Explanation for Clock Rate]: [Intel Explanation for Clock Rrate](https://www.intel.com/content/www/us/en/gaming/resources/CPU-clock-speed.html)
 
@@ -397,3 +389,14 @@ It is practically impossible to run any system except MacOS for laptops made aft
 
 
 [^Intel_on_GPU]: [Intel on Difference of CPU and GPU](https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-GPU.html)
+
+[^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).
+
+[^Internet_Choosing_Hardware]: [CPU benchmark](https://www.CPUbenchmark.net/); [Tom's Hardware](https://www.tomshardware.com/reviews/CPU-hierarchy,4312.html); 
+
+[^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
+
+[^Windows_On_Mac]: Macbook made before 2020 running on intel CPU had the option to dual boot windows. 
+It is practically impossible to run any system except MacOS for laptops made after 2020 with a M series chip, because Apple is deliberately untransparent on the design of M series chips to hinder developers of other operating system to adapt to Apple products. [Asahi Linux](https://asahilinux.org) seems to be the only barely working exception. 
+
+

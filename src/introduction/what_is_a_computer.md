@@ -247,16 +247,16 @@ It shall be of no surprise as machine learning utilises a lot of linear algebra 
 
 ### Other Hardwares
 
-
 ## Software 
 
 Computer hardwares are everything that exists physically, and the softwares are everthing else. 
+A computer needs **_both_** to function properly.
 
 Examples of softwares include:
 
-1. The web browser, pdf viewer, music players, python interpreter, etc. These are the application software a user interacts with directly;
-1. The software allows you to open, close, resize, and organsize application windows with your mouse and keyboard. This software is called a desktop environment, on which every applications software depends on;
-1. The one that controls your mouses and keyboards. These are device drivers.
+1. The application softwares that includes the web browser, pdf viewer, music players, python interpreter, etc, with which a user will interact directly;
+1. The desktop environment which will allow you to open, close, resize, and organsize application windows with your mouse and keyboard. All application software will depend on desktop environment. 
+1. The device drivers that controls your mouse, keyboard, and other accessories. 
 1. The one that manage the cpu, memory, the disk, etc. They are the operating system and system softwares. Every other software depends on them.
 
 This is the _**software hierarchy**_. 
@@ -365,6 +365,18 @@ The short answer is to choose Linux for coding, Windows to play games, and Mac t
 
 
 Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
+
+
+### Desktop Environment 
+
+Desktop environment is a series of softwares that control the appearence of application windows, how they are arranged, and how they interact with the mouse and the keyboard, i.e., it is decides graphical user interface of the computer.
+
+Windows and MacOS are bundled with an uninstallable desktop environment. 
+Desktop environment in general, however, are **_not_** dependent on the operating system and can be installed and uninstalled without effecting the OS.
+
+Some examples of desktop environment are Gnome, KDE plasma, and xfce.
+
+There are also some very innovative desktop environments(or windows manager) that are, although very different from the window and drag style in Windows and Mac, equally effective. They are i3, sway, and hyprland.
 
 
 ### Footnotes

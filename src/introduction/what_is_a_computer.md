@@ -369,14 +369,20 @@ Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux
 
 ### Desktop Environment 
 
-Desktop environment is a series of softwares that control the appearence of application windows, how they are arranged, and how they interact with the mouse and the keyboard, i.e., it is decides graphical user interface of the computer.
+Desktop environment is a series of softwares that control the appearence of application windows, how they are arranged, and how they interact with the mouse and the keyboard, i.e., it decides the graphical user interface.
 
 Windows and MacOS are bundled with an uninstallable desktop environment. 
 Desktop environment in general, however, are **_not_** dependent on the operating system and can be installed and uninstalled without effecting the OS.
 
 Some examples of desktop environment are Gnome, KDE plasma, and xfce.
 
-There are also some very innovative desktop environments(or windows manager) that are, although very different from the window and drag style in Windows and Mac, equally effective. They are i3, sway, and hyprland.
+There are some innovative desktop environments (or windows manager) that are, although vastly different from the window and drag style in Windows and Mac, equally effective. They are i3, sway, and hyprland.
+
+It is the desktop environment that defines the immediate user experience of a computer. 
+As linux systems may have very differet desktop environemnt, the user experience and the GUI among linux system varies dramatically.
+
+### Package Manager
+
 
 
 ### Footnotes

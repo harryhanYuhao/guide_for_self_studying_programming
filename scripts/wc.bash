@@ -17,6 +17,9 @@ DATE=`date`
 
 echo "${DATE}, ${WORD_COUNT}" >> $LOG_FILE_PATH
 
+# modified pre-commit, add to the pending commit
+git add $LOG_FILE_PATH
+
 YELLOW="\033[33m"
 BOLD="\033[1m"
 RESET="\033[0m"

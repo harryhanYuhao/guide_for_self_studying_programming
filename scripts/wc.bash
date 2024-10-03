@@ -17,8 +17,8 @@ DATE=`date`
 
 echo "${DATE}, ${WORD_COUNT}" >> $LOG_FILE_PATH
 
-RED="\033[31m"
+YELLOW="\033[33m"
 BOLD="\033[1m"
 RESET="\033[0m"
 
-echo -e "${RED}${BOLD}Word count recorded to log/wc.md!${RESET}"
+echo -e "${YELLOW}${BOLD}Word count recorded to log/wc.md!${RESET}"

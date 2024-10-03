@@ -64,15 +64,13 @@ In comparison, a fully funcitonal, ready to use Linux distribution with full gra
 
 ### Coding Experience 
 
-The overall coding experience on Windows is mediocre. 
-Reasons are: 
+The overall coding experience on Windows is mediocre:
 
 1. Windows is not designed for programmers but for ordinary users and gamers.[^not for programmer] 
-1. Microsoft forces every programmer to use the Windows developing suites (Visual Studio Code).
-There is no alternative to it, and every serious programmer need to use it. 
-The problem is that the developer suites are not open-sourced. This means a programmer can not view, edit, and learn from the source code, and, if something in the programmer suite goes wrong (which often takes place), the programmer can do nothing except waiting for Microsoft to fix it. 
-Many also criticise Visual Studio Code is badly made: it runs slowly, took many CPU and RAM resources, and has poor user interface.
-1. Many programming tools are not available, or can not be used conveniently, on Windows. Examples are neovim, tmux, fish, etc.
+1. Microsoft forces every programmer to use Visual Studio, which is a bundle of necessary programming tools for software development.
+Visual Studio is not open-sourced, and a programmer can not view, edit, and learn from its source code, and, if something goes wrong (which often takes place), the programmer can do nothing except waiting for Microsoft to fix it. 
+Many also criticise Visual Studio itself: it runs slowly, occupies much disk space (circa 20 GB), takes much CPU and RAM resources, and has poor user interface.
+1. Many programming tools are not available, or can not be used conveniently on Windows. Examples are neovim, tmux, fish, etc.
 1. There is no official package manager.
 
 That being said, most game are developed on Windows, as Windows has the best compatibility support for most gaming development tools.
@@ -83,8 +81,7 @@ MacOS is POSIX compliant Unix system developed by Apple.
 It is only available on Apple computers. 
 Many consumer appraise MacOS for its stability, beautiful apperance, and convenient interaction with other Apple devices. 
 
-Similar to Windows, Apple has the full control of MacOS, and users do not. 
-Apple also seems to abuse its unchecked rights:
+Apple has the complete control over MacOS, a privilage that was abused:
 
 1. Apple voluntarily stopped the support for OpenGL and Vulkan to promote Metal, a graphical framework created by Apple. This makes many AAA games not functional on MacOS.
 1. Apple has secretly underclocked older devices (making them slower) without notifying users. 
@@ -93,7 +90,7 @@ Many suspected Apple did it to encourage consumers to buy new Apple products. Ap
 ### User Experience
 
 Apple's product is famous for its beautiful appearance and animations. 
-Interaction between Apple's device are also widely appraised. Apart from these, however, Apples's products are poor (and expensive):
+Interaction between Apple's device are also appraised. Apart from these, however, Apples's products are poor (and expensive):
 
 1. MacOS has serious compatibility issues. Many software can not run on MacOS, including most of the games and many developer tools. Some softwares refuses to offer MacOS support, some software's support was deliberately undermined by Apple;
 1. Purchasing applications through Apple's App Store costs more, as Apple takes 30% of any purchase.

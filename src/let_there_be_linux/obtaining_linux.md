@@ -1,1 +1,1 @@
-# Navigating Linux
+# Obtaining Linux

@@ -1,6 +1,6 @@
 # What is a Computer
 
-The computer is such a powerful and magical machine, that many fail to reailise that it is just made from preconfigured electronic circuits.
+The computer is such a powerful and magical machine, that many fail to reailise it is just made from preconfigured electronic circuits.
 
 The electronic circuits are hardwares, and all the rules the hardwares follow are the software.
 
@@ -321,7 +321,7 @@ For example:
 1. The desktop environment, which is a series of software that controls the windows and graphical output of the computer,
 1. Some [utility software](https://www.gnu.org/software/binutils/) for assemble the assembly, searching symbols, linking object files, managing archives, etc.
 
-Some softwares seem mundane, but are essential:
+Some other softwares seem even more mundane, but are essential:
 
 1. An application for user login;
 1. A software to create and delete files and directory,
@@ -349,7 +349,6 @@ AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
 Minix is another one designed for teaching. 
 
 The most popular operating systems for personal computer is MacOS and Windows. 
-
 They are also the only preinstalled operating system for most commercially available computers.
 
 Linux is overwhelmingly more popular, however, among professional servers and super computers. 
@@ -383,7 +382,41 @@ As linux systems may have very differet desktop environemnt, the user experience
 
 ### Package Manager
 
+Many may not realise that package management is one of the most complicated tasks in programming.
 
+Think of the following senarios:
+
+1. Packages may be bundled differently in different operating systems. 
+Alsa (Advanced Linux Sound Architecture) provides kernel sound card drivers for linux users and a user space sound library.
+The user space library is called `alsa-lib` on Arch. 
+`alsa-lib` does not exist in Debian, but is included in `libasound2`. 
+Such examples are countless, and this phenomenon is a major issue for software portability.
+1. The depedency tree could expansive. 
+For example, a pacakge may depend on dozens of other packages, which in term depdends on dozens more.
+A huge package has thousands of dependencies in total. [^firefox dependencies]
+1. Circular dependency is when
+ a software A depends on B, B depends on C, but C depends on A. (This forms a circle.)
+Circular depedency is rare for application softwares, but every operating system itself has this problem. 
+The reason is simple: an operating system is a piece of software that needs the C library to run, but C library itself requires the operating system to work. 
+To solve this problem, the operating system softwares has to be compiled and configured with the C library on a working computer, which is bundled into a single file, called the image. 
+The image can then be installed into a computer without an operating system. 
+Where did the first operating system come from, you may ask. 
+In the early days, all programs are written in punched card, recording directly the binary files that a computer can understand!
+1. Dependency hell is the case where softwares B and C depends on two different versions of the software A. 
+This usually takes place in web, python, data science, and AI programming, where software updates are frequent.
+On a single system, usually only one version of the software A can exists. 
+Say software A version v1.0 was installed in the computer, and software B depended on it. 
+Software A was updated to v2.0, where new features are added and some obsolete features were removed. 
+Software C depends on the new features, but software B depends on the obsolete feature: this is a deadend, software A, B, C can not coexists in the same system. 
+Virtual environment were introduced to solve this problem (npm, python venv, and docker), in whi
+
+
+
+
+Package manager, although virtually non-existant on Windows and MacOS, is popular on Linux distributions.
+
+Package manager installs, uninstalls, and manages in any other ways all packages in an operating system. 
+All softwares, programming libraries, scripts, and anything that can be downloaded from the internet is a package.
 
 ### Footnotes
 
@@ -410,11 +443,12 @@ As linux systems may have very differet desktop environemnt, the user experience
 
 [^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).
 
+[^firefox dependencies]: Firefox has total of 252 unique dependencies on Arch Linux. Its full dependency tree is [here](https://drive.google.com/file/d/1HaUhjr86dSHMy1IgMASCM5urlQob90K9/view?usp=sharing), which is the output of `pactree firefox`.
+
 [^Internet_Choosing_Hardware]: [CPU benchmark](https://www.CPUbenchmark.net/); [Tom's Hardware](https://www.tomshardware.com/reviews/CPU-hierarchy,4312.html); 
 
 [^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
 
 [^Windows_On_Mac]: Macbook made before 2020 running on intel CPU had the option to dual boot windows. 
 It is practically impossible to run any system except MacOS for laptops made after 2020 with a M series chip, because Apple is deliberately untransparent on the design of M series chips to hinder developers of other operating system to adapt to Apple products. [Asahi Linux](https://asahilinux.org) seems to be the only barely working exception. 
-
 

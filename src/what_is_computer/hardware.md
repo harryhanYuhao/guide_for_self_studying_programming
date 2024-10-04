@@ -1,19 +1,4 @@
-# What is a Computer
-
-The computer is such a powerful and magical machine, that many fail to reailise it is just made from preconfigured electronic circuits.
-
-The electronic circuits are hardwares, and all the rules the hardwares follow are the software.
-
-<details>
-<summary>Too boring? You may skip this chapter</summary>
-
-This chapter is a brief overview of how each parts of the computer work together. You will understand these things better after you have got your hands dirty.
-
-If you want to start coding right away, skip this and go to [choosing os](../introduction/choosing_os.md) to see why Linux is a better operating system for coding.
-
-</details>
-
-## Hardware: what constitutes a computer
+# Hardware: what constitutes a computer
 
 Computer hardwares are the physical objects which constitutes the computer in the real world. 
 Most of the computer hardwares are made of complex electronic circuits with semiconductors.
@@ -31,7 +16,7 @@ Check these videos[^Assembling Computer] to see how different hardwares are asse
 Peripheral hardware matters little for our purpose.
 Let us focus intead on how core hardwares function.
 
-### Central Processing Unit (CPU)
+## Central Processing Unit (CPU)
 
 CPU is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the CPU.
 CPU is the most important factor that determines how smoothly and fast the computer runs.
@@ -103,7 +88,7 @@ Here are some terms that describes a CPU:
 
     Caches, RAM and hard disk memory constitutes the memory hierarchy[^Memory Hierarchy] paradigm explained in the next session.
 
-#### History of Intel Processors[^Intel Processors Source]
+## History of Intel Processors[^Intel Processors Source]
 
 This tables describes the interesting evolution of Intel CPU. 
 
@@ -127,7 +112,7 @@ This tables describes the interesting evolution of Intel CPU.
 |Intel® Core™ i7-8665UE            | 2018 | 4.0 GHz (Turbo) | 8 Mb |   4 cores, 8 threads   | Integraged Intel® HD Graphics 620 GPU|
 |Intel® Core™ i9 processor 14900KS | 2024 | 6.2 GHz (Turbo) | 32 Mb |   24 cores, 32 threads   | Integraged with Intel® UHD Graphics 770 GPU|
 
-### The Memory Hierarchy
+## The Memory Hierarchy
 
 Moder computer are designed with memory hierarchy principle for effective data storage, fast retrieval while maintaing cost.
 
@@ -138,7 +123,7 @@ Hard disk is the cheapest, largest, and the slowest.
 <!-- TODO: state TABLE NAME -->
 Please see the table in the next session for comparison of the speed of caches, RAM, and hard disk, and the time for CPU to execute various other tasks.
 
-#### Characterising Performance of Storage Devices: Bandwidth and Latency
+## Characterising Performance of Storage Devices: Bandwidth and Latency
 
 Two comman benchmarking metrics for storage devices are bandwidth and latency.
 
@@ -157,7 +142,7 @@ Second, most of the low level input and output are controlled solely by the hard
 
 Let us now introduce memory and secondary storage devices, the lower part of the hierarchy.
 
-#### Random Access Memory (RAM)
+## Random Access Memory (RAM)
 
 Random Access Memory, or RAM, is in the middle layer of the memory hierarchy. 
 Slower and cheaper than cache, but faster and more expensive than hard disks.
@@ -169,14 +154,14 @@ The exact behaviour will depend on operating system.
 
 <!-- TODO: DDR, SDDR, GDDR, etc -->
 
-#### Secondary Storage (Harddisk, SSD, HDD)
+## Secondary Storage (Harddisk, SSD, HDD)
 
 Secondary storage devices (or, colloquially, the hard disk) is at the bottom of the hierarchy.
 They are static storage devices. 
 The data will not be lost after powering off.
 All persistent data and software, including the operating system, are stored in a secondary storage device.
 
-#### Solid State Drive (SSD) and Hard Disk Drive (HDD)
+## Solid State Drive (SSD) and Hard Disk Drive (HDD)
 
 The technology for storage devices has underwent various innovation since its inception. 
 In the early days people used tapes and floppy disks.
@@ -193,7 +178,7 @@ This means SSD looks like a chip and can be made smaller.
 Historically, SSD has been very expensive. 
 Their price has dropped dramatically since 2023, thanks to intense market competitions from the Chinese firms.
 
-#### Comparison of Time Needed for Various Operations
+## Comparison of Time Needed for Various Operations
 
 The following table compares the time needed to execute various operations.
 
@@ -231,7 +216,7 @@ To make sense of these numbers, the following table assumes one CPU cycle to tak
 |Send a Packet From Beijing to Edinburgh | Pyramid of Giza Built                | 20 years      | \\(1 \times 10^9\\) |
 |Computer Reboot                 | Span of Byzantine Empire                     | 1200 years    | \\(6 \times 10^{10}\\) |
 
-### Graphics Processing Unit (GPU) [^Intel_on_GPU]
+## Graphics Processing Unit (GPU) [^Intel_on_GPU]
 
 While CPU has a dozen of big and powerful cores, GPU has thousands of small cores. The GPU's cores can effectively handle computation, but has difficulties in processing logics.  
 
@@ -245,180 +230,10 @@ In fact, most graphical algorithms takes the form of matrices. Thus comes the na
 In recent years people found that GPU can execute machine learning algorithms more efficiently than CPU. 
 It shall be of no surprise as machine learning utilises a lot of linear algebra and statistical algorithms.  
 
-### Other Hardwares
-
-## Software 
-
-Computer hardwares are everything that exists physically, and the softwares are everthing else. 
-A computer needs **_both_** to function properly.
-
-Examples of softwares include:
-
-1. The application softwares that includes the web browser, pdf viewer, music players, python interpreter, etc, with which a user will interact directly;
-1. The desktop environment which will allow you to open, close, resize, and organsize application windows with your mouse and keyboard. All application software will depend on desktop environment. 
-1. The device drivers that controls your mouse, keyboard, and other accessories. 
-1. The one that manage the cpu, memory, the disk, etc. They are the operating system and system softwares. Every other software depends on them.
-
-This is the _**software hierarchy**_. 
-
-Lower level software provides support for higher level ones. 
-At the lowest level is the operarting system, which communicate directly with the hardware. 
-At the highest level is application softwares, with which the users interact directly. 
-
-The operating system and other related low-level software are called *__system software__*.
-
-Application software can not access the memory or send a instruction to cpu directly; instead, it make such requests to the system software, which then communicate directly with the hardware, and returns the required informations back to the application software.
+## Other Hardwares
 
 
-### Operating System
-
-Operating system (OS) is likely the most important software. 
-
-Its precise definition is:
-
-> \[Operating system is\] an intermediary between the user of the computer and the computer hardware. [^OS Concept]
-
-To put it in another way, operating system is magical software that allow users to send instruction to the silicon chips by using the keyboard, mouse, etc, and return the chips' respond in human-readable forms.
-
-Operating system, however, is _**not**_:
-
-1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
-1. related to user interface and appearence. 
-
-#### Kernel, the Core of the Operating System
-
-Kernel is the most important part of the operating system that has control of almost everything in the computer. 
-It provides many abstract and innovative functionalities every other software relies upon that ensure the security, speed, and stability of the computer. 
-
-Here are some of the typical subsystems of a kernel:
-
-1. Threads and [scheduler](https://docs.kernel.org/scheduler/index.html): Thread is the sequence of instructions that computer shall execute. 
-Each computer program lives on its respective thread. 
-Some program may spawn multiple threads for parallel execution. 
-A cpu can only run a dozen threads concurrently, but thousand of them may be waiting to be executed at a time.
-To solve this problem, the scheduler, as part of the kernel, based on the priority of the program, schedules the cpu to run certain threads for a short time, switch to other threads, run for another short time, and switch back. 
-In a user's perspective, thousands of programs may seem to run concurrently.
-1. [Memory management](https://docs.kernel.org/mm/index.html): It is common that a program requests a large space of memory at the start of execution, but will only use them later, with some memory staying unused for the whole duration.
-It is a lot of waste if the memory is allocated at the time of request.
-Virtual memory is invented to solve this problem. This is how it works: at the start of execution each thread is allocated an unlimited amount of virtual memory, and only at the time of use these virtual memory is mapped to the phsycial RAM. (The full scheme is much more complicated)
-
-The kernel, as magical as it seems, is written in programming languages just like any other softwares.
-The kernels of Windows, Linux, and MacOS are all written in [C](../lets_write_code/c.md) and [assembly language](../lets_write_code/assembly.md).
-Currently, there is attempt to write the kernel in [rust](../lets_write_code/rust.md). 
-
-You can check the source code of the most famous open-sourced kernel here: [Linux Kernel](https://www.kernel.org/).
-
-#### Other parts of the Operating System
-
-Many utility softwares, besides the kernel, are necessary for a functioning computer. 
-These softwares are system softwares. 
-Some of the system softwares are considered part of the operating system.
-
-For example:
-
-1. A bootloader to load the operating system when the computer is booting up;
-1. Various device drivers for keyboards, mice, usbs, wifi, gpu, etc;
-1. The desktop environment, which is a series of software that controls the windows and graphical output of the computer,
-1. Some [utility software](https://www.gnu.org/software/binutils/) for assemble the assembly, searching symbols, linking object files, managing archives, etc.
-
-Some other softwares seem even more mundane, but are essential:
-
-1. An application for user login;
-1. A software to create and delete files and directory,
-
-Many operating systems ship with these system softwares. As they are incorporated into the OS very closely, many consider them a part of the operating system.
-
-There are much debates on if a software can be considered a system software or an application software. 
-For example, web browsers on most operating system is an application software. 
-On ChromeOS, however, the browser may be considered an operating system utility software, as every application is launched by the browser, which acts as the only user-interface.  
-
-The following list shows which level of software the user is interacting with when booting up the computer.
-
-1. You turn on the computer by pressing the power button: you are working directly with the hardware;
-1. The logo of your computer brand shows up: the motherboard is powered on, kernel is being loaded onto ram (likely init ram file system);
-1. The logo of your operating system shows up, sometimes with pages of logs: the kernel is loaded and under initialisation;
-1. Start up screen shows up: the operating system is fully loaded; 
-1. You entered the username and password: a system software is trying to authenticate your identity;
-1. You enterred the desktop and openned up the browser: you are now working with application softwares.
-
-#### Examples of Operating System
-
-The most popular operating systems today include Windows, MacOS, and the series of Linux distributions. 
-There are, however, many more less known ones. The BSD and Solaris belongs to the Unix family. 
-AmigaOS, OS/2, BeOS, RISC OS, MorphOS, and Haiku were famous in their days.
-Minix is another one designed for teaching. 
-
-The most popular operating systems for personal computer is MacOS and Windows. 
-They are also the only preinstalled operating system for most commercially available computers.
-
-Linux is overwhelmingly more popular, however, among professional servers and super computers. 
-Since 2017, all of the top 500 super computer runs on Linux.
-
-Linux is also suitable for personal use.
-
-If you have not used Linux before, you should try it, as it is an objectively superior OS for writing code in most circumstances.
-
-#### Choosing an Operating System for Personal Use
-
-The short answer is to choose Linux for coding, Windows to play games, and Mac to waste some money.
-
-
-Check [Choosing OS](./choosing_os.md) session for a detailed comparison of Linux, MacOS, and Windows.
-
-
-### Desktop Environment 
-
-Desktop environment is a series of softwares that control the appearence of application windows, how they are arranged, and how they interact with the mouse and the keyboard, i.e., it decides the graphical user interface.
-
-Windows and MacOS are bundled with an uninstallable desktop environment. 
-Desktop environment in general, however, are **_not_** dependent on the operating system and can be installed and uninstalled without effecting the OS.
-
-Some examples of desktop environment are Gnome, KDE plasma, and xfce.
-
-There are some innovative desktop environments (or windows manager) that are, although vastly different from the window and drag style in Windows and Mac, equally effective. They are i3, sway, and hyprland.
-
-It is the desktop environment that defines the immediate user experience of a computer. 
-As linux systems may have very differet desktop environemnt, the user experience and the GUI among linux system varies dramatically.
-
-### Package Manager
-
-Many may not realise that package management is one of the most complicated tasks in programming.
-
-Think of the following senarios:
-
-1. Packages may be bundled differently in different operating systems. 
-Alsa (Advanced Linux Sound Architecture) provides kernel sound card drivers for linux users and a user space sound library.
-The user space library is called `alsa-lib` on Arch. 
-`alsa-lib` does not exist in Debian, but is included in `libasound2`. 
-Such examples are countless, and this phenomenon is a major issue for software portability.
-1. The depedency tree could expansive. 
-For example, a pacakge may depend on dozens of other packages, which in term depdends on dozens more.
-A huge package has thousands of dependencies in total. [^firefox dependencies]
-1. Circular dependency is when
- a software A depends on B, B depends on C, but C depends on A. (This forms a circle.)
-Circular depedency is rare for application softwares, but every operating system itself has this problem. 
-The reason is simple: an operating system is a piece of software that needs the C library to run, but C library itself requires the operating system to work. 
-To solve this problem, the operating system softwares has to be compiled and configured with the C library on a working computer, which is bundled into a single file, called the image. 
-The image can then be installed into a computer without an operating system. 
-Where did the first operating system come from, you may ask. 
-In the early days, all programs are written in punched card, recording directly the binary files that a computer can understand!
-1. Dependency hell is the case where softwares B and C depends on two different versions of the software A. 
-This usually takes place in web, python, data science, and AI programming, where software updates are frequent.
-On a single system, usually only one version of the software A can exists. 
-Say software A version v1.0 was installed in the computer, and software B depended on it. 
-Software A was updated to v2.0, where new features are added and some obsolete features were removed. 
-Software C depends on the new features, but software B depends on the obsolete feature: this is a deadend, software A, B, C can not coexists in the same system. 
-Virtual environment were introduced to solve this problem (npm, python venv, and docker), in whi
-
-
-
-
-Package manager, although virtually non-existant on Windows and MacOS, is popular on Linux distributions.
-
-Package manager installs, uninstalls, and manages in any other ways all packages in an operating system. 
-All softwares, programming libraries, scripts, and anything that can be downloaded from the internet is a package.
-
-### Footnotes
+## Footnotes
 
 [^Assembling Computer]: [Assemble the core parts](https://www.youtube.com/watch?v=Mmq_fASrTB4); 
 [Chinese Version](https://www.bilibili.com/video/BV1tu411f7ja/?spm_id_from=333.337.search-card.all.click&vd_source=82fe9c55db42ef82bc704c85e0ace879)
@@ -440,15 +255,3 @@ All softwares, programming libraries, scripts, and anything that can be download
 
 
 [^Intel_on_GPU]: [Intel on Difference of CPU and GPU](https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-GPU.html)
-
-[^OS Concept]: Page 1, Silberschatz, A., Galvin, P.B. and Gagne, G. (2018). Operating system concepts. [online] Hoboken, N.J Wiley. Available at: [https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf](https://os.ecci.ucr.ac.cr/slides/Abraham-Silberschatz-Operating-System-Concepts-10th-2018.pdf).
-
-[^firefox dependencies]: Firefox has total of 252 unique dependencies on Arch Linux. Its full dependency tree is [here](https://drive.google.com/file/d/1HaUhjr86dSHMy1IgMASCM5urlQob90K9/view?usp=sharing), which is the output of `pactree firefox`.
-
-[^Internet_Choosing_Hardware]: [CPU benchmark](https://www.CPUbenchmark.net/); [Tom's Hardware](https://www.tomshardware.com/reviews/CPU-hierarchy,4312.html); 
-
-[^OS_Nomenclature]: OS is short for operating system. There are MacOS, ChromeOS, HarmonyOS, etc.
-
-[^Windows_On_Mac]: Macbook made before 2020 running on intel CPU had the option to dual boot windows. 
-It is practically impossible to run any system except MacOS for laptops made after 2020 with a M series chip, because Apple is deliberately untransparent on the design of M series chips to hinder developers of other operating system to adapt to Apple products. [Asahi Linux](https://asahilinux.org) seems to be the only barely working exception. 
-

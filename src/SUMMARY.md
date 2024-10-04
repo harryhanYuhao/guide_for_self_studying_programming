@@ -3,8 +3,10 @@
 [Guide for Self Studying Coding](./title_page.md)
 
 - [How to Read this book](./introduction/how_to_read_this_book.md)
-- [What is a Computer](./introduction/what_is_a_computer.md)
-    - [Choosing OS](./introduction/choosing_os.md)
+- [What is a Computer](./what_is_computer/summary.md)
+    - [Hardware](./what_is_computer/hardware.md)
+    - [Software](./what_is_computer/software.md)
+    - [Choosing OS](./what_is_computer/choosing_os.md)
 - [Let There be Linux](./let_there_be_linux/let_there_be_linux.md)
     - [Obtaining Linux](./let_there_be_linux/obtaining_linux.md)
     - [Linux, Unix?](./let_there_be_linux/linux_unix.md)

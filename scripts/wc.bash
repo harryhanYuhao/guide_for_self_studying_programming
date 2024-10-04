@@ -25,3 +25,6 @@ BOLD="\033[1m"
 RESET="\033[0m"
 
 echo -e "${YELLOW}${BOLD}Word count recorded to log/wc.md!${RESET}"
+
+echo "End of Count Files:"
+echo -en '\033[35m'; tail log/wc.md -n 5; echo -en '\033[0m'

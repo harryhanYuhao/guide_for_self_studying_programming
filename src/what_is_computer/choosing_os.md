@@ -146,7 +146,7 @@ In comparison, Ubuntu and Manjaro are preconfigured and can work out of box.
 
 ### User Experience
 
-Different Linux distributions will lead to different user experience. This could be Linux's greatest advantage: you may choose the distribution that fit your need. 
+Different Linux distributions will lead to different user experience. This be Linux's greatest advantage: you may choose the distribution that fit your need. 
 
 Many modern Linux distribution, including Ubuntu, Manjaor, and Linux Mint, focuse on user experience. 
 Using them is similar to use Windows or MacOS: everything will simply work, and all can be done by using a mouse to click the GUI.
@@ -184,9 +184,42 @@ Linux distributions are particularly suitable for coding:
 1. Linux is customisable. Linux user has more choices on every softwares including the desktop environment. 
     Linux systems can also be freely customised to boost your productivity. See [ricing](../let_there_be_Linux/ricing.md).
 
-### Power of Open Source 
+### The Power of Open Source 
 
+Linux is a free and open source software. 
+The word free means both free of charge and freedom: any one can obtain a copy of it without charge and can have absolute freedom over this copy, including viewing the source code.
 
+The success of Linux kernel may largely attribute to it being open source. 
+As anyone can view its source code, they may also find bugs or propose new functionalities.
+Many Linux users contribute codes to the Linux kernel by sending patches to Linus Torvalds or one of the maintainers, who review the patch and accept those he deems good.
+The work of Linus Torvalds himself, as of 2024, mostly consist of reviewing patches instead of writing the code.
+
+Many companies have strong incentives to contribute to Linux. 
+For example, if a hardware manufacturer developped a new hardware, which requires a speical device driver,
+it will likely code the driver and send it to the Linux kernel.
+If the patch is accepted (it is very likely to be accepted.), its customers can use the hardware on a Linux system free of trouble.
+
+Many big companies like Amazon and Google also have strong incentives to use Linux.
+For example, Amazon Web Service provides cloud servers as a service. 
+The server has to run on a operating system. 
+Let it be Windows, Unix, or MacOS, Amazon would need to pay much for a license and will not have the rights to modify the operating system to fit its need.
+As a result, Amazon chose the free alternative, Linux.
+
+#### A Anecdote of Open Source
+
+On March 2024 a backdoor was found in the popular open-source archiving tool xz. 
+Hackers may use this backdoor to gain control of the computer in certain circumstances. 
+This backdoor was created by a series of malicious code written by one of xz's maintainers.
+
+The interesting story is that, the backdoor was found by Andres Freund, a developer at Microsoft, when he noticed ssh login time increased from 0.3 seconds to 0.9 seconds. 
+He then analyze the execution of ssh loginm, the source code and commit history of xz, and found the backdoor.
+
+Such backdoor, if exists on Windows or MacOS for an closed-sourced software, will likely never to be discovered,
+as it is common for Windows or MacOS to slowdown suddenly for no apparent reasons, let alone reviewing the logs and source code for a closed-source software.
+
+Many, however, criticise open-source software for the lack of reliability, citing this instance. 
+I hereby refute their opinions. 
+A closed-sourced software will not offer more reliability[^reliability], and the creaters of these software may inject malicious backdoors with equal probability, and the difference is no one will ever find these backdoors.
 
 ### Use Linux
 
@@ -221,3 +254,5 @@ Many has downloaded the fraudulent software and been hacked. See [gthub discussi
 [^Battery Gate]:[Battery Gate](https://web.archive.org/web/20240824011120/https://www.npr.org/2020/11/18/936268845/apple-agrees-to-pay-113-million-to-settle-batterygate-case-over-iphone-slowdowns)
 
 [^GNU_Linux]: [GNU Linux, Free Software Fundation](https://www.gnu.org/gnu/Linux-and-gnu.en.html)
+
+[^reliability]: todo

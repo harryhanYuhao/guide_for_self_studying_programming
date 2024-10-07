@@ -88,7 +88,7 @@ Here are some terms that describes a CPU:
 
     Caches, RAM and hard disk memory constitutes the memory hierarchy[^Memory Hierarchy] paradigm explained in the next session.
 
-## History of Intel Processors[^Intel Processors Source]
+### History of Intel Processors[^Intel Processors Source]
 
 This tables describes the interesting evolution of Intel CPU. 
 
@@ -123,7 +123,7 @@ Hard disk is the cheapest, largest, and the slowest.
 <!-- TODO: state TABLE NAME -->
 Please see the table in the next session for comparison of the speed of caches, RAM, and hard disk, and the time for CPU to execute various other tasks.
 
-## Characterising Performance of Storage Devices: Bandwidth and Latency
+### Characterising Performance of Storage Devices: Bandwidth and Latency
 
 Two comman benchmarking metrics for storage devices are bandwidth and latency.
 
@@ -142,7 +142,7 @@ Second, most of the low level input and output are controlled solely by the hard
 
 Let us now introduce memory and secondary storage devices, the lower part of the hierarchy.
 
-## Random Access Memory (RAM)
+### Random Access Memory (RAM)
 
 Random Access Memory, or RAM, is in the middle layer of the memory hierarchy. 
 Slower and cheaper than cache, but faster and more expensive than hard disks.
@@ -154,14 +154,14 @@ The exact behaviour will depend on operating system.
 
 <!-- TODO: DDR, SDDR, GDDR, etc -->
 
-## Secondary Storage (Harddisk, SSD, HDD)
+### Secondary Storage (Harddisk, SSD, HDD)
 
 Secondary storage devices (or, colloquially, the hard disk) is at the bottom of the hierarchy.
 They are static storage devices. 
 The data will not be lost after powering off.
 All persistent data and software, including the operating system, are stored in a secondary storage device.
 
-## Solid State Drive (SSD) and Hard Disk Drive (HDD)
+### Solid State Drive (SSD) and Hard Disk Drive (HDD)
 
 The technology for storage devices has underwent various innovation since its inception. 
 In the early days people used tapes and floppy disks.
@@ -178,7 +178,7 @@ This means SSD looks like a chip and can be made smaller.
 Historically, SSD has been very expensive. 
 Their price has dropped dramatically since 2023, thanks to intense market competitions from the Chinese firms.
 
-## Comparison of Time Needed for Various Operations
+### Comparison of Time Needed for Various Operations
 
 The following table compares the time needed to execute various operations.
 

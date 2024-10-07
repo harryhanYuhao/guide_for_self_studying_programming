@@ -36,7 +36,7 @@ Operating system, however, is _**not**_:
 1. related to the hardware. Just like any other software any operating system, idealy, can run on any hardware
 1. related to user interface and appearence. 
 
-## Kernel, the Core of the Operating System
+### Kernel, the Core of the Operating System
 
 Kernel is the most important part of the operating system that has control of almost everything in the computer. 
 It provides many abstract and innovative functionalities every other software relies upon that ensure the security, speed, and stability of the computer. 
@@ -59,7 +59,7 @@ Currently, there is attempt to write the kernel in [rust](../lets_write_code/rus
 
 You can check the source code of the most famous open-sourced kernel here: [Linux Kernel](https://www.kernel.org/).
 
-## Other parts of the Operating System
+### Other parts of the Operating System
 
 Many utility softwares, besides the kernel, are necessary for a functioning computer. 
 These softwares are system softwares. 
@@ -92,7 +92,7 @@ The following list shows which level of software the user is interacting with wh
 1. You entered the username and password: a system software is trying to authenticate your identity;
 1. You enterred the desktop and openned up the browser: you are now working with application softwares.
 
-## Examples of Operating System
+### Examples of Operating System
 
 The most popular operating systems today include Windows, MacOS, and the series of Linux distributions. 
 There are, however, many more less known ones. The BSD and Solaris belongs to the Unix family. 
@@ -109,7 +109,7 @@ Linux is also suitable for personal use.
 
 If you have not used Linux before, you should try it, as it is an objectively superior OS for writing code in most circumstances.
 
-## Choosing an Operating System for Personal Use
+### Choosing an Operating System for Personal Use
 
 The short answer is to choose Linux for coding, Windows to play games, and Mac to waste some money.
 
@@ -137,13 +137,13 @@ Package management is one of the most complicated tasks in programming.
 
 Think of the following tricky senarios for package management:
 
-## Too much dependencies
+### Too much dependencies
 
 The depedency tree could expansive. 
 For example, a pacakge may depend on dozens of other packages, which in term depdends on dozens more.
 A huge package may have thousands of dependencies in total. [^firefox dependencies]
 
-## Different name, same software
+### Different name, same software
 
 Packages may be bundled differently in different operating systems. 
 For example, ALSA (Advanced Linux Sound Architecture) provides kernel sound card drivers and a user space programming library on Linux systems.
@@ -151,7 +151,7 @@ The user space library is called `alsa-lib` on Arch.
 `alsa-lib` does not exist in Debian, which is instead included in `libasound2`. 
 Such examples are countless, and this is a major issue for software portability.
 
-## Circular Dependency
+### Circular Dependency
 
 Circular dependency is when
  a software A depends on B, B depends on C, but C depends on A again. (This forms a circle.)
@@ -162,7 +162,7 @@ The image can then be installed into a computer without an operating system.
 Where did the first operating system come from, you may ask. 
 In the early days, all programs are written in punched card, recording directly the binary files that a computer can understand!
 
-## Dependency Hell
+### Dependency Hell
 
 Dependency hell is the case where softwares B and C depends on two different versions of software A. 
 This usually takes place in web, python, data science, and AI programming, where software updates are frequent.
@@ -175,7 +175,7 @@ If they do, they have to be named differently, such as gcc-12, gcc-13, etc.)
 One method to solve this problem is virtual environment, in which a group of softwares may run independly from the softwares outside of it. 
 Examples of technologies that implement virtual environment include python-venv, docker, and npm,
 
-## The Solution: Package Manager
+### The Solution: Package Manager
 
 Package manager was invented to solve these problems. 
 Package manager can install, remove, update, and in any other way manage all the packages.

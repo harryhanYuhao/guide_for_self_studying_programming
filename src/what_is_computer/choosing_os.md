@@ -37,23 +37,24 @@ There are many controversies, but here are a few facts:
 1. Microsoft's privacy statement explicitly states that it will collect your personal data and share them with third-parties organisations. It does not say what data is collected, but a previous statement says it will collect personal information including password and browsing histories.
 [^Sharing Data]
 1. Microsoft's softwares explicitly exploits user data. For example, Microsoft Recall, launched in June 2024, is a software service that helps user find what they have done on the computer previously. 
-Recall works by taking the snapshots of the computer periodically and process them with copilot. Any other programs that can take a computer's screenshot and share it through the internet without user's permission is called a spyware. [^Microsoft Recall]
+Recall works by taking the snapshots of the computer periodically and processing them with Microsoft Copilot. 
+Any other programs that can take a computer's screenshot and share it through the internet without user's permission is usually called a spyware. [^Microsoft Recall]
 
-In conclusion, Microsoft have total power over Windows, not the user. This is a big problem for learning to code.
+In conclusion, Microsoft have total power over Windows, not the user. This is a big problem for coding.
 
 ### User Experience
 
 Here are the advantage of Windows:
 
 1. It is likely preinstalled on most computers;
-1. it is a stable OS and almost all softwares can run on it;
-1. Microsoft's services, including OneDrive, Gaming Service, Copilot, may be helpful.
+1. it is a stable OS, and almost all softwares can run on it;
+1. Microsoft's services, including OneDrive, gaming service, and Copilot, may be helpful.
 
 Here are the disadvantages: 
 1. Windows may force a system update, or keeping popping up remainders. User can not turn off the reminders;
-1. Many built in software can not be uninstalled, including Microsoft edge[^edge], copilot, etc. A software that can not be uninstalled is called a malware;
-1. Windows has many built in advertisement that can not be removed;
-1. There is not a official repository of Windows software. (Mac also does not have it, but most Linux ditributions do.) To install a software on Windows, one have to search on internet and find the most plausible one. 
+1. Many built-in software can not be uninstalled, including Microsoft edge[^edge], copilot, etc. A software that can not be uninstalled is usually called a malware;
+1. Windows has many built-in advertisements that can not be removed;
+1. Windows does not have a general-purpose package manager. (Mac does not have it, either, but most Linux ditributions do.) To install a software on Windows, one have to search on internet and find the most plausible one. 
 It is possible that an hacked or imposter software is installed. This is not only an inconvenience, but also a severe security concern. [^hacked software]
 1. Windows is a bulky software that takes unreasonable amount of resources. 
 1. Some Windows App may be slow for no reasons, and user can do nothing about it. 
@@ -160,15 +161,16 @@ That being said, here are the common advantages of all Linux distributions:
 An Arch system with a fully functional graphical desktop environment and common application software often takes less than 20 GB of disk space. 
 The operating system and the desktop environment may take less than 2 GB of RAM.
 
-Here are some possible disadvantages:
+Here are some disadvantages:
 
 1. Most Linux system will not have customer support, as it is a free software developed by the community. There are, however, abundant support on the internet.
 1. With great power comes great responsibilities. Linux granted the ultimate power to the users, and it will not prevent the users from breaking the systems.
 1. Some softwares may not run on Linux, including certain videos games like League of Legends and Valorant.
-The good news is many Linux developers are currently solving this compatibility issues. 
-Wine is an open-source developed in recent years which enable most Windows software to run on Linux. 
-Proton, based on Wine, is developped by Valve which allows many games on Steam to run on Linux. 
-As a side note, the Steamdeck uses Arch Linux.
+The good news is many Linux developers are currently solving this issue. 
+For example, 
+Wine is an open-source which enables most Windows software to run on Linux natively. 
+Proton, based on Wine, was developped by Valve which allows most games on Steam to run on Linux. 
+(The Steamdeck runs on Arch Linux.), Sima Qian
 
 ### The Coding Experience 
 
@@ -190,43 +192,31 @@ Linux is a free and open source software.
 The word free means both free of charge and freedom: any one can obtain a copy of it without charge and can have absolute freedom over this copy, including viewing the source code.
 
 The success of Linux kernel may largely attribute to it being open source. 
-As anyone can view its source code, they may also find bugs or propose new functionalities.
-Many Linux users contribute codes to the Linux kernel by sending patches to Linus Torvalds or one of the maintainers, who review the patch and accept those he deems good.
+Anyone can view the source code, and many of the more enthusiastics were ready to fix bugs, propose new functionalities, and in other ways contribute to Linux.
+Many Linux users have contributed codes to the Linux kernel by sending patches to Linus Torvalds or one of the maintainers, who would review the patch and accept those he deems good.
 The work of Linus Torvalds himself, as of 2024, mostly consist of reviewing patches instead of writing the code.
 
 Many companies have strong incentives to contribute to Linux. 
-For example, if a hardware manufacturer developped a new hardware, which requires a speical device driver,
+For example, if a hardware manufacturer has developped a new hardware, which requires a speical device driver,
 it will likely code the driver and send it to the Linux kernel.
-If the patch is accepted (it is very likely to be accepted.), its customers can use the hardware on a Linux system free of trouble.
+If the driver is accepted into the kernel (which is very likely), its customers can use the hardware on a Linux system free of trouble.
 
 Many big companies like Amazon and Google also have strong incentives to use Linux.
-For example, Amazon Web Service provides cloud servers as a service. 
+For example, Amazon Web Service provides cloud servers as a service.
 The server has to run on a operating system. 
-Let it be Windows, Unix, or MacOS, Amazon would need to pay much for a license and will not have the rights to modify the operating system to fit its need.
+Let it be Windows, Unix, or MacOS, Amazon would need to pay much for a license and will not be able to customise them.
 As a result, Amazon chose the free alternative, Linux.
 
-#### A Anecdote of Open Source
+As a free software, Linux is particularly suitable for individuals to learning to code, as it give the use the most freedom to explore and learn the ins and outs of the operating system. 
 
-On March 2024 a backdoor was found in the popular open-source archiving tool xz. 
-Hackers may use this backdoor to gain control of the computer in certain circumstances. 
-This backdoor was created by a series of malicious code written by one of xz's maintainers.
-
-The interesting story is that, the backdoor was found by Andres Freund, a developer at Microsoft, when he noticed ssh login time increased from 0.3 seconds to 0.9 seconds. 
-He then analyze the execution of ssh loginm, the source code and commit history of xz, and found the backdoor.
-
-Such backdoor, if exists on Windows or MacOS for an closed-sourced software, will likely never to be discovered,
-as it is common for Windows or MacOS to slowdown suddenly for no apparent reasons, let alone reviewing the logs and source code for a closed-source software.
-
-Many, however, criticise open-source software for the lack of reliability, citing this instance. 
-I hereby refute their opinions. 
-A closed-sourced software will not offer more reliability[^reliability], and the creaters of these software may inject malicious backdoors with equal probability, and the difference is no one will ever find these backdoors.
-
-### Use Linux
+## Conclusion: Use Linux
 
 This may be a biased opinion: I regard Linux as the best operating system for coding and personal use.
 
 If you are not using Linux, *__try__* it. 
-Trying Linux costs nothing but some time, efforts, and courage.
+
+Trying Linux costs nothing except some time, efforts, and courage, but will return you many rewards.
+
 
 ## Footnotes 
 
@@ -255,4 +245,9 @@ Many has downloaded the fraudulent software and been hacked. See [gthub discussi
 
 [^GNU_Linux]: [GNU Linux, Free Software Fundation](https://www.gnu.org/gnu/Linux-and-gnu.en.html)
 
-[^reliability]: todo
+
+[^reliability]: In general, an open-source software are distributed under a license similar to [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), which states anyone can distribute, modify, or in any other ways use the software, but the software is provided "as is", meaning the user shall accept the software in its current form, and the creators will not be held accountable for any potential faults.
+Closed-source softwares also hold licenses with similar disclaimers.
+MacOS's [terms and condition](https://www.apple.com/legal/sla/docs/macOSSequoia.pdf) states 
+'THE APPLE SOFTWARE AND SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND,'.
+For Microsoft Windows, the only [warranty](file:///home/virtus/Downloads/UseTerms_OEM_Windows_11_English.pdf) is that 'properly licensed software will perform substantially as described in any Microsoft materials that accompany the software'.

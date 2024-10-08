@@ -4,6 +4,7 @@ The computer is such a powerful and magical machine, that many fail to reailise 
 
 The electronic circuits are [hardwares](./hardware.md), and all the rules the hardwares follow are the [software](./software.md).
 
+They are explained in the next chapter.
 
 <details>
 <summary>Too boring? You may skip this chapter</summary>

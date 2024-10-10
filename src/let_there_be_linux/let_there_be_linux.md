@@ -88,6 +88,7 @@ When the computer is hibernating, all data on ram is transferred to swap, which 
 Swap is optional, but I recommend to __*always*__ use swap, unless your disk space is very small (<100GB). 
 The size of sway shall be bigger than RAM. 
 
+Reboot the computer and enjoy.
 
 ## Footnotes
 

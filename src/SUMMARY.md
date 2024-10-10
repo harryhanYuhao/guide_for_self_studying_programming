@@ -8,9 +8,10 @@
     - [Software](./what_is_computer/software.md)
     - [Choosing OS](./what_is_computer/choosing_os.md)
 - [Let There be Linux](./let_there_be_linux/let_there_be_linux.md)
+    - [Linux on Command Line](./let_there_be_linux/linux_on_command_line.md)
     - [Linux Ricing](./let_there_be_linux/ricing.md)
     - [Linux, Unix?](./let_there_be_linux/linux_unix.md)
-    - [Linux on CLI](./let_there_be_linux/linux_on_cli.md)
+    - [Manually Install Linux](./let_there_be_linux/manually_install.md)
 - [Let's Write Code](./lets_write_code/chapter_summary.md)
     - [C](./lets_write_code/c.md)
     - [C++](./lets_write_code/cpp.md)
@@ -26,5 +27,6 @@
     - [Glossary](./appendix/glossary.md)
     - [Bibliography](./appendix/bibliography.md)
     - [Writing Guide](./appendix/writing_guide.md)
+
 
 [Postscript](./postscript.md)

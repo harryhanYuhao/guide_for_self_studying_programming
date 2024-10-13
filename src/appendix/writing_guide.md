@@ -8,6 +8,8 @@
 
 The ultimate standard for technical writing like this is to make it informative, succinct, easy to read, and enjoyable to read, ranking in the descending order of importance.
 
+To put it rhetorically, removal of any one word will hamper the passage, while inclusion of another will make it redundant.
+
 The goal is not, however, to make this writing a piece of grand style literature of Shakespeare or Walter Scott.
 
 ## informative 
@@ -18,8 +20,10 @@ Delete every sentence that does not to acheive this.
 ## Succinct
 
 A succint passage is an informative passage that is short. 
-The goal is to express the same information in fewest words.
+The goal is to express the same information in fewest words without losing any quality or making the writing awkward.
 
 Here is a non-succint passage:
 
-> The common standard for succinct writings is that it can express a lot of information in relatively small number of words, while at the same time expressing the same idea without losing any details.
+> The common standard for a piece of succinct writings is that it can express a lot of information in relatively small number of words, while at the same time expressing the same idea without losing any details or make the writing bad in expression.
+
+In general I believe all writing shall be succinct, particularly technical writings.

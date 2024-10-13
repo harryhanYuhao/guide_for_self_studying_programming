@@ -7,9 +7,9 @@ Let us investigate the difference between these OS.
 <details>
 <summary>Skip this chapter?</summary>
 
-This chapter presents many lesser known facts about Windows, MacOS, and Linux distributions to help you choose a OS for coding. 
+This chapter presents many less known facts about Windows, MacOS, and Linux distributions.
 
-If you have already set up your mind to use Linux, go to [Let There be Linux](../let_there_be_linux/let_there_be_linux.md).
+If you have already set up your mind to use Linux, check [Let There be Linux](../let_there_be_linux/let_there_be_linux.md).
 
 If you do not plan to use Linux, I strongly recommend you to try, and you will likely to benefit from reading this chapter.
 
@@ -38,30 +38,30 @@ There are many controversies, but here are a few facts:
 [^Sharing Data]
 1. Microsoft's softwares explicitly exploits user data. For example, Microsoft Recall, launched in June 2024, is a software service that helps user find what they have done on the computer previously. 
 Recall works by taking the snapshots of the computer periodically and processing them with Microsoft Copilot. 
-Any other programs that can take a computer's screenshot and share it through the internet without user's permission is usually called a spyware. [^Microsoft Recall]
+Any other programs that can take a computer's screenshot and share it through the internet without user's permission is called a spyware. [^Microsoft Recall]
 
 In conclusion, Microsoft have total power over Windows, not the user. This is a big problem for coding.
 
 ### User Experience
 
-Here are the advantage of Windows:
+Most people have satifiable experience on Windows:
 
 1. It is likely preinstalled on most computers;
 1. it is a stable OS, and almost all softwares can run on it;
 1. Microsoft's services, including OneDrive, gaming service, and Copilot, may be helpful.
 
-Here are the disadvantages: 
-1. Windows may force a system update, or keeping popping up remainders. User can not turn off the reminders;
-1. Many built-in software can not be uninstalled, including Microsoft edge[^edge], copilot, etc. A software that can not be uninstalled is usually called a malware;
-1. Windows has many built-in advertisements that can not be removed;
-1. Windows does not have a general-purpose package manager. (Mac does not have it, either, but most Linux ditributions do.) To install a software on Windows, one have to search on internet and find the most plausible one. 
-It is possible that an hacked or imposter software is installed. This is not only an inconvenience, but also a severe security concern. [^hacked software]
-1. Windows is a bulky software that takes unreasonable amount of resources. 
-1. Some Windows App may be slow for no reasons, and user can do nothing about it. 
+There are, however, significant inconvenience:
 
-Once booting up Windows usually will take 7 GB of RAM and around 100 GB of disk space. 
-As Windows is not open-source, users can not know what is using these resources. 
-In comparison, a fully funcitonal, ready to use Linux distribution with full graphical interface may only need 2 GB of RAM and 20 GB of disk space.
+1. Windows may force a system update, or keeping popping up remainders. User can not turn off the reminders;
+1. Many built-in software can not be uninstalled, including Microsoft edge[^edge], copilot, etc. A software that can not be uninstalled is called a malware;
+1. Windows has built-in advertisements that can not be removed;
+1. Windows does not have a general-purpose package manager. (Mac does not have it, either, but most Linux ditributions do.) To install a software on Windows, one have to search on internet and find the most plausible link for download. 
+This is not only an inconvenience, but also a severe security concern, as a hacked software may be installed. [^hacked software]
+1. Windows is a bulky and takes unreasonable amount of resources. 
+Windows usually will take 7 GB of RAM and around 100 GB of disk space. 
+In comparison, a fully funcitonal, ready to use Linux distribution with full graphical interface only need 2 GB of RAM and 20 GB of disk space.
+1. Some Windows App may be laggy for no apparent reasons, and user can do nothing about it. 
+
 
 ### Coding Experience 
 
@@ -70,11 +70,11 @@ The overall coding experience on Windows is mediocre:
 1. Windows is not designed for programmers but for ordinary users and gamers.[^not for programmer] 
 1. Microsoft forces every programmer to use Visual Studio, which is a bundle of necessary programming tools for software development.
 Visual Studio is not open-sourced, and a programmer can not view, edit, and learn from its source code, and, if something goes wrong (which often takes place), the programmer can do nothing except waiting for Microsoft to fix it. 
-Many also criticise Visual Studio itself: it runs slowly, occupies much disk space (circa 20 GB), takes much CPU and RAM resources, and has poor user interface.
-1. Many programming tools are not available, or can not be used conveniently on Windows. Examples are neovim, tmux, fish, etc.
+This is a major inconvenience for learners.
+1. Many programming tools are not available, or can not be used conveniently on Windows, such as neovim, tmux, and fish.
 1. There is no official package manager.
 
-That being said, most game are developed on Windows, as Windows has the best compatibility support for most gaming development tools.
+That being said, most game are developed on Windows, as Windows has the best support for most gaming development tools.
 
 ## MacOS
 
@@ -82,18 +82,19 @@ MacOS is POSIX compliant Unix system developed by Apple.
 It is only available on Apple computers. 
 Many consumer appraise MacOS for its stability, beautiful apperance, and convenient interaction with other Apple devices. 
 
-Apple has the complete control over MacOS, a privilage that was abused:
+Like Microsoft, Apple has the complete control over MacOS, a privilage that was abused:
 
-1. Apple voluntarily stopped the support for OpenGL and Vulkan to promote Metal, a graphical framework created by Apple. This makes many AAA games not functional on MacOS.
 1. Apple has secretly underclocked older devices (making them slower) without notifying users. 
 Many suspected Apple did it to encourage consumers to buy new Apple products. Apple refuted this statement but agreed to pay 113 million. [^Battery Gate]
+1. Apple voluntarily stopped the support for OpenGL and Vulkan to promote Metal, a graphical framework created by Apple. This makes many AAA games not functional on MacOS.
 
 ### User Experience
 
-Apple's product is famous for its beautiful appearance and animations. 
+Apple's products are famous for their beautiful appearances, smooth animations, and long battery life.
 Interaction between Apple's device are also appraised. Apart from these, however, Apples's products are poor on many aspects:
 
 1. MacOS has serious compatibility issues. Many software can not run on MacOS, including most of the games and many developer tools. Some softwares refuses to offer MacOS support, some software's support was deliberately undermined by Apple;
+1. Apple promotes the software made by Apple, and hampers third party softwares. [^Apple hampers third party softwares]
 1. Purchasing applications through Apple's App Store costs more, as Apple takes 30% of any purchase.
 1. MacOS consumes a lot of RAM and disk space. A brand new installation of MacOS takes likely more than 40 GB of disk and 4 GB of RAM.
 
@@ -242,6 +243,8 @@ Many has downloaded the fraudulent software and been hacked. See [gthub discussi
 [^not for programmer]: You can not find any allusion to programming in Windows 11's official [advertisement](https://www.microsoft.com/en-gb/windows/windows-11).
 
 [^Battery Gate]:[Battery Gate](https://web.archive.org/web/20240824011120/https://www.npr.org/2020/11/18/936268845/apple-agrees-to-pay-113-million-to-settle-batterygate-case-over-iphone-slowdowns)
+
+[^Apple hampers third party softwares]: TODO
 
 [^GNU_Linux]: [GNU Linux, Free Software Fundation](https://www.gnu.org/gnu/Linux-and-gnu.en.html)
 

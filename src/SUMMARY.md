@@ -12,6 +12,7 @@
     - [Linux Ricing](./let_there_be_linux/ricing.md)
     - [Linux, Unix?](./let_there_be_linux/linux_unix.md)
     - [Manually Install Linux](./let_there_be_linux/manually_install.md)
+    - [FAQ](./let_there_be_linux/linux_faq.md)
 - [Let's Write Code](./lets_write_code/chapter_summary.md)
     - [C](./lets_write_code/c.md)
     - [C++](./lets_write_code/cpp.md)

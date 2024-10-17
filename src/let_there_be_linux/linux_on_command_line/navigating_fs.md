@@ -96,3 +96,27 @@ You can list files in order of time created with `-t`, and in reverse order with
 $ ls -lt  # list by time created, newest first
 $ ls -ltr  # list by time created in reverse order
 ```
+
+## `rm`
+
+`rm` is used to remove files.
+
+```sh
+$ touch a_file
+$ rm a_file
+```
+
+To remove a directory, pass `-r` flag, which stands for recursive.
+
+```sh
+$ mkdir a_dir; touch a_dir/a a_dir/b
+$ rm a_dir  
+rm: cannot remove 'a_dir': Is a directory
+$ rm -r a_dir  # remove success
+```
+
+*__NOTE__* remove with caution! `rm` will delete the file from the file-system, and it is extremely difficult to revert the removal.
+
+You can instead use a tool like `trash-cli`, which will move the files into a trash-can. 
+
+

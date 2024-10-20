@@ -62,7 +62,7 @@ $ ./hi.bash  # execute it by entering its relative path
 hi executable
 ```
 
-You can append the directory into `PATH` envrionment variable.
+You can append the directory into `PATH` envrionment variable. (For persistant change modify the `bashrc`).
 
 ```sh
 $ PATH="$PATH:$HOME/executable_demo"
@@ -70,40 +70,76 @@ $ hi.bash
 hi executable
 ```
 
-When entering a bash command, bash will search all executable files under directoryies in the `$PATH` variable, and execute it if the name matches.
+When entering a bash command, bash will search all executable under `$PATH` directories and execute the first matched one.
 
-Check your current `PATH` variable:
+Check your current `PATH` variable this way:
 
 ```sh
 $ echo $PATH  # it shall look like this
-/home/virtus/.local/bin:/home/virtus/bin:/usr/local/bin:/usr/bin:/home/virtus/.cargo/bin/:/home/virtus/executable_demo
+/home/virtus/.local/bin:/home/virtus/bin:/usr/local/bin:/usr/bin:/home/virtus/.cargo/bin/
 $ echo $PATH | tr ':' '\n'  # substitute : for \n, which is carriage return
+/home/virtus/.local/bin
+/home/virtus/bin
+/usr/local/bin
+/usr/bin
+/home/virtus/.cargo/bin/
 ```
-
-Again, if you want persistant change, append `PATH="$PATH:$HOME/executable_demo"` to `bashrc`.
 
 ## Glob pattern 
 
-In bash you can use `*` as a wild card to match any letter, and `?` to match any one single letter.
-This is called 'glob pattern'. 
-Note, glob pattern is different from regex.
+Strings in bash containing `*`, `?`, or `[` are glob patterns, which are wildcard that can match strings following these rules (among others):
 
-Here is the example
+1. `*` matches any strings including the empty string;
+1. `?` match exactly one character of any sort;
+1. `[`, `]` match any single character contained in the brackets
+
+Glob pattern is __*different*__ from regular expression, or regex.
+
+See following examples:
 
 ```sh
 $ touch a.txt b.txt abc.txt ab.md ac.md a.md  # create some files for experiment
 $ ls *.txt  # list any files that end with .txt
 abc.txt  a.txt  b.txt
-$ ls *.md  # list any files that end with .md
-ab.md  ac.md  a.md
-$ ls ??.*  $ list files of any extension that have two letters before .
+$ ls ??.*  # list files of any extension that have two letters before .
 ab.md  ac.md
-$ rm *.txt  $ rm all .txt files 
-$ ls
-ab.md  ac.md  a.md
-$ rm *  $ rm all files
+$ ls [ab].txt
+a.txt b.txt
+$ ls [ab]*.txt
+abc.txt  a.txt  b.txt
+$ rm *  # rm all files
 ```
+
 
 ## Stdin, Stdout, Stderr
 
+Stdin, Stdout, Stderr are abbreviations for standard input, standard output, and standard error. 
+These are stdio (standard input and output) streams used in operating system as a abstract layer to handle the inputs and outputs of all programs.
 
+For simlicity:
+
+1. Stdin, stdout, stderr are represented by fd 0, 1, 2, respectively. Fd means file descriptor. 
+1. If a bash command runs successfully, it may a return some information through stdout, which will be printed on the terminal;
+1. If a command failed, it may return the informations through stderr, which will be printed on the terminal and likely have no difference from stdout for users's perspective;
+1. Many commands can handle inputs from command arguments and from stdin;
+1. Bash has many tools to handle stdio, including `|` (pipeline), `>` (output redirection), `<` (input redirection), etcs. 
+
+Check [stdio(3)](https://man7.org/linux/man-pages/man3/stdin.3.html)
+
+Symbols controlling input and output are the most exploited features in bash. 
+They are used to produce obfuscated code like this: 
+```sh
+$ for i in $(echo -e 'G\nM\nK'); do du -hsx *  2>/dev/null | grep '[0-9]'$i | sort -rn; done
+```
+
+Here is a gental introduction for bash io symbols.
+
+### Pipeline, `|`
+
+## Bash History and `!`, arrow keys, and `Ctrl-r`.
+
+### Note on `!`
+
+TODO: `set +H`, history, negate pattern, etc
+
+Check [glob manual 7](https://man7.org/linux/man-pages/man7/glob.7.html) and [bash pattern matching](https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching).

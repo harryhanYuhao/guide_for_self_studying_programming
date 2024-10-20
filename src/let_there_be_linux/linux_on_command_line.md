@@ -46,10 +46,9 @@ Writing bash scripts will be introduced in [Let's Write Code](../lets_write_code
 
 ## References 
 
+1. [Effective Shell](https://effective-shell.com/)
 1. [Gnu Bash Manual](https://www.gnu.org/software/bash/manual/)
-1. [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_01_01.html)
 1. [Advanced Bash Scripting Guides](https://tldp.org/LDP/abs/html/)
-1. [woolegdge Bash Guide](https://mywiki.wooledge.org/BashGuide)
 
 ## Footnotes 
 

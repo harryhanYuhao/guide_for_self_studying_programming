@@ -17,4 +17,7 @@ additional-css = [
 print = { enable = true }
 fold = { enable = true, level = 0 }
 git-repository-url = "https://github.com/harryhanYuhao/guide_for_self_studying_programming"
-
+google-analytics = "G-8FPH3EJ81N"  # Note this is deprecate
+# google analytics shall be included in head.hbs
+# which is added, however, netlify does not seem to support it,
+# which is working in local build

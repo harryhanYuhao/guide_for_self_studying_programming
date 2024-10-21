@@ -93,6 +93,12 @@ Navigating the contents presented by `less` is the same as navigating the man pa
 
 `|` is the pipe keywords, which redirect the output of the previous command to be the input of the next command. 
 
-## Other commands
+## Miscellanea
 
-You shall check out these commands: `pwd`, `ls`
+- `clear`: clear terminal screen
+- `sleep` : sleep for some seconds 
+- `rmdir`: remove empty directory
+- `whatis`: display one-line manual page descriptoin
+- `whereis`: find where does the command locate
+- `ps`: get pid of process 
+- `kill`: kill a process with pid

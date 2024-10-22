@@ -38,7 +38,7 @@ LOGO=manjarolinux
 
 If `cat /etc/os-release` does not work, try `cat /etc/*release`. `*` is a glob wild card explained later. If none of them works, try `hostnamectl`. `ctl` stands for control.
 
-A file can be created with `echo` and output redirection `>`, and redirection with append `>>`. 
+A file can be created with `echo` and output redirection `>`, or redirection with append `>>`. 
 
 ```sh
 $ echo "Hello" > hello.txt 
@@ -92,6 +92,11 @@ apropos <keywords> | less
 Navigating the contents presented by `less` is the same as navigating the man page. (Indeed, man pages likely use `less`).
 
 `|` is the pipe keywords, which redirect the output of the previous command to be the input of the next command. 
+It is explained in [advanced concepts](./advanced.md).
+
+## `copy`, and Glob Pattern
+
+<!-- TODO: -->
 
 ## Miscellanea
 

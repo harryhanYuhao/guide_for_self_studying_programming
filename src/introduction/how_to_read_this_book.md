@@ -7,8 +7,15 @@ Any functional computer will be enough to get started.
 For practical advices on buying a computer, see [appendix](../appendix/advice_on_buying_a_computer.md).
 
 It is, nevertheless, always helpful to learn how each piece of the electronics and softwares work together to produce the powerful machine that we call a computer today.
-See [what is a computer](./what_is_a_computer.md) for an introduction.
+See [what is a computer](../what_is_computer/summary.md).
+
+You also need to choose an operating system. 
+I recommand Linux.
+Check [choosing OS](../what_is_computer/choosing_os.md)
 
 ## Step 1: Learn the Basics
 
+The first step to learn coding is to learn to use the computer, learn a programming language, and write some codes.
 
+Check how to using the computer on command line [here](../let_there_be_linux/linux_on_command_line.md).
+Learn a programming language by following instructions [here](../lets_write_code/chapter_summary.md).

@@ -15,7 +15,7 @@ Check [choosing OS](../what_is_computer/choosing_os.md)
 
 ## Step 1: Learn the Basics
 
-The first step to learn coding is to learn to use the computer, learn a programming language, and write some codes.
+One shall first learn to use the computer, acquire a programming language, and write some codes as an exercise.
 
 Check how to using the computer on command line [here](../let_there_be_linux/linux_on_command_line.md).
-Learn a programming language by following instructions [here](../lets_write_code/chapter_summary.md).
+Learn a programming language by instructions [here](../lets_write_code/chapter_summary.md).

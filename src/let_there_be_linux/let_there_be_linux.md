@@ -4,14 +4,9 @@
 
 This chapter will teach you how to install and use Linux. (Linux can not be installed on most Apple's computer, however.)
 
-This is chapter outline:
-
-1. choose and install a Linux distribution;
-1. customise the Linux system;
-1. navigate the system with the command line;
-1. set up developing environment. 
-
-Let us start by choosing and installing a Linux distribution.
+Let us start by choosing and installing a Linux distribution. 
+Next, we will learn to use the command line and set up development envrironment.
+Various other details are also discussed in chapter subsessions.
 
 ## Which Distribution to Use?
 

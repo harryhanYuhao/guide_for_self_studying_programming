@@ -1,5 +1,7 @@
 # Pacakge Manager 
 
+## Package manager on Linux
+
 Differet Linux distros are equipped with different package managers, but their functionailities are similar. 
 
 Arch and Arch derived distros, including Manjaro, Garuda, and EndeavorOS use pacman.
@@ -50,3 +52,11 @@ For example, the `libgl` library is called `libgl1-mesa-glx` for aptand `mesa-li
 The easist way to find the name for your desired package is to search on Google.
 
 You can check more usages of package manager [here](https://wiki.archlinux.org/title/Pacman/Rosetta).
+
+## Package Manager on MacOS and Windows
+
+<a href="https://brew.sh/" target="_blank">Homebrew</a>
+is a third-party package manager for Mac,
+<a href="https://github.com/microsoft/winget-cli" target="_blank">Winget</a>,
+the one for Windows. 
+The overall experience using them, however, is inferior compared to Linux's.

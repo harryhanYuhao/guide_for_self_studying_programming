@@ -128,15 +128,24 @@ Check [stdio(3)](https://man7.org/linux/man-pages/man3/stdin.3.html)
 
 Symbols controlling input and output are the most exploited features in bash. 
 They are used to produce obfuscated code like this: 
+
 ```sh
 $ for i in $(echo -e 'G\nM\nK'); do du -hsx *  2>/dev/null | grep '[0-9]'$i | sort -rn; done
 ```
 
-Here is a gental introduction for bash io symbols.
+This code enumerate files in the current directory in order of size.
+
+The following sesssion is a gental introduction for bash io symbols.
 
 ### Pipeline, `|`
 
-## Bash History and `!`, arrow keys, and `Ctrl-r`.
+Pipeline redirect the stdout of the previous command to the stdin of the next command. 
+This symbol is used with commands that accept input from the stdin.
+
+
+
+
+## Bash History, `!`, arrow keys, and `Ctrl-r`.
 
 ### Note on `!`
 

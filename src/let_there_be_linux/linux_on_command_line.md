@@ -5,19 +5,19 @@
 
 You can navigate a gnome or KED Linux system with only GUI (Graphical User Interface), explore, configure, execute all tasks by clicking the buttons. 
 
-Contrary to Graphical user interface is the command line interface (CLI), that is, to control the computer by typing commands in the termial.
+GUI is not the only method of controlling the computer.
+Contrary to it is the command line interface (CLI), that is, to control the computer by typing commands in the termial.
 
 CLI has unique advantages:
 
 1. CLI can boost you productivity.
 1. CLI can help you automate tasks.
-1. Some workflow may only work with CLI, such connecting to a remote server.
+1. Some workflow may only work with CLI, such as connecting to a remote server.
 1. Many utilities tools were developped with CLI in mind, which may be more convenient to use than their GUI counterparts. 
 Examples are `make`, `gcc`, `git`, `find`, `grep`, `tmux`, etc.
 
-For most modern computers the command line is only accessible via a shell which runs in a virtual terminal.
+For most modern computers the command line is only accessible via a shell which usually runs in a virtual terminal.
 The virual terminal[^terminal history] is usually called the terminal emulater, or just 'the terminal', which process the input and the output, and is usually opened in a window.
-
 
 A shell, in contrary, is command interpreter that executes the commands a user types into the terminal.
 

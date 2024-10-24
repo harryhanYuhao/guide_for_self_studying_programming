@@ -2,7 +2,8 @@
 
 > And God said, “Let there be light,” and there was light. -- Genesis 1:3
 
-This chapter will teach you how to install and use Linux. (Linux can not be installed on most Apple's computer, however.)
+This chapter will teach you how to install Linux on a computer hardware and how to use it. 
+Linux is likely not compatible with Apple's hardware, however.[^Linux on Mac]
 
 Let us start by choosing and installing a Linux distribution. 
 Next, we will learn to use the command line and set up development envrironment.
@@ -86,6 +87,11 @@ The size of sway shall be bigger than RAM.
 Reboot the computer and enjoy.
 
 ## Footnotes
+
+[^Linux for Mac]: Apple has 'closed' its computer in the sense that it does not allow users to manipulate the computer hardware as they wish.
+As a result, one have to 'hack' the Mac to install Linux, which is a difficult and unreliable procedure.
+There are efforts to do this, nevertheless. See 
+<a href="https://asahilinux.org/" target='_blank'>Asahi Linux</a>.
 
 [^videos for de]: [Tiling Windows Manager](https://www.youtube.com/watch?v=rjMZV0jgjL4);
 [KDE Plasma](https://www.youtube.com/watch?v=iIxRm8IhFJs);

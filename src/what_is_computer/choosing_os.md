@@ -21,13 +21,13 @@ If you have decided to skip Linux, go to [Let's Write Code](../lets_write_code/c
 ## Windows
 
 Windows is a widely available operating system developed by Microsoft. 
-It is shipped with almost all softwares a user may need, including a desktop environment, a C/C++ compiler with libraries, and a developer suite (Visual Studio Code). 
+It is shipped with almost all softwares one may need, including a desktop environment, a C/C++ compiler with libraries, a developer suite (Visual Studio Code), and various application softwares. 
 This makes it ready to use out of the box.
 Windows is also compatible with almost all softwares, including most videos games.
 
 Windows, contrary to common believe, is **not** free. 
 It costs around 100 GBP. 
-When purchasing a computer with Windows preinstalled, the price of Windows is included in the price of the computer.
+This fact may be overlloked, as when purchasing a computer with Windows preinstalled, the price of Windows is included in the price of the computer.
 
 The important **_drawback_** is that
 Microsoft has the complete control of a Windows system instead of the users, and it often uses its unchecked rights for abuse.

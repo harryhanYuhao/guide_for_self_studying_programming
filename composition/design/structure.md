@@ -30,12 +30,12 @@ I plan this book to contain the following sessions:
     - c++ 
     - rust
     - java 
-    - kotlin
     - haskell
     - misc 
         - go 
         - python 
         - lean (mathematic programming)
+    - Web development
 - Get Comfortable with coding: Working on a Project
     - project list on github
     - example projects ...

@@ -16,6 +16,16 @@ Check these videos[^Assembling Computer] to see how different hardwares are asse
 Peripheral hardware matters little for our purpose.
 Let us focus intead on how core hardwares function.
 
+<details>
+<summary>Too boring? You may skip this chapter</summary>
+
+This chapter is a brief overview of how each parts of the computer work together. 
+You will understand this chapter better after you have got your hands dirty.
+
+If you want to start coding right away, go to [choosing os](../introduction/choosing_os.md) to see why Linux is a better operating system for coding.
+
+</details>
+
 ## Central Processing Unit (CPU)
 
 CPU is the brain and the most important part of the computer. All data, computation, input, output, and programming logics are processed by the CPU.

@@ -2,7 +2,7 @@
 
 > It is better to teach people fishing than to give them fish. -- Chinese Proverb
 
-This is a guide for self studying computer science. 
+This is a guide for self studying computer science, i.e., coding.
 The targeted audience are those with little or no experience of coding, and those who have learned coding only for a specific task but lack the systematic knowledge. 
 The only prerequisites are a personal computer and the determination to learn.
 

@@ -6,11 +6,11 @@
 > (After it was finished) The book was exhibited in the market. Anyone that can delete or add one word into it was rewarded with thousands of gold, which was hanged above it. -- The Records of the Grand Historian, Sima Qian
 
 
-The ultimate standard for technical writing like this is to make it informative, succinct, easy to read, and enjoyable to read, ranking in the descending order of importance.
+The ultimate standard for tutorial like this is to make it informative, succinct, easy to read, and enjoyable to read, ranking in the descending order of importance.
 
-To put it rhetorically, removal of any one word will hamper the passage, while inclusion of another will make it redundant.
+To put it rhetorically, the removal of any one word will hamper the passage, while the inclusion of another will make it redundant.
 
-The goal is not, however, to make this writing a piece of grand style literature of Shakespeare or Walter Scott.
+The goal is not, however, either to make this writing a piece of grand style literature of Shakespeare or Walter Scott, or to make it like an encyclopedia with only boring facts.
 
 ## informative 
 

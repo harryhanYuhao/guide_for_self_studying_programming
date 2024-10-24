@@ -1,6 +1,6 @@
 # Summary
 
-[Guide for Self Studying Coding](./title_page.md)
+[Yetin Guide for Coding](./title_page.md)
 
 - [How to Read this book](./introduction/how_to_read_this_book.md)
 - [What is a Computer](./what_is_computer/summary.md)

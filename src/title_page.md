@@ -1,4 +1,4 @@
-# Guide for Self Studying Coding
+# Yetin Guide for Coding
 
 > It is better to teach people fishing than to give them fish. -- Chinese Proverb
 

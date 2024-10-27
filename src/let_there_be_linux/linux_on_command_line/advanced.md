@@ -142,8 +142,33 @@ The following sesssion is a gental introduction for bash io symbols.
 Pipeline redirect the stdout of the previous command to the stdin of the next command. 
 This symbol is used with commands that accept input from the stdin.
 
+Here is a naive example:
 
+```sh
+$ echo "hello" | wc -c  # count the number of characters in the string 
+```
 
+Many useful and creative commands depend on pipeline.
+
+```sh
+$ grep -r "pattern" . | wc -l  # count the number of lines that contain "pattern" in the current directory
+$ ls -l | grep "drwx"  # list all directories in the current directory
+$ grep -r "pattern" . | sort | uniq  # sort and remove duplicates
+$ find . -type f | less  # list all files recursively and open in less
+```
+
+Most commands will treat stdin and command arguments differently.
+
+For example, how can we count how many lines of code are in files presented in the current directory?
+
+We can use `wc -l <filename>` to count the number of lines in a file, and `find . -type f` to list all files in the current directory.
+`find . -type f | wc -l` will, however, only counts the number of lines in the output of `find . -type f`, i.e., how many files there are in the current directory. 
+
+We need, instead, pipe the output of `find` to the arguments of `wc`. `xargs` is the commad used for this.
+
+```sh
+$ find . -type f | xargs wc -l # count total number of lines in files of current directory
+```
 
 ## Bash History, `!`, arrow keys, and `Ctrl-r`.
 

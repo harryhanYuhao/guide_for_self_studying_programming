@@ -78,17 +78,17 @@ It is a customary practise on Linux to log in through an ordinary user account a
 For beginners, I recommend to let Linux occupy the whole disk, that is, irrevocably wipe all data in the disk.
 Some older computers have two disks, one smaller and faster SSD, another bigger and slower HDD. 
 Install Linux onto the SSD. 
-1. Swap memory. Swap is a portion of hard disk reserved for memory usage. 
+1. Swap memory[^swap]. Swap is a portion of hard disk reserved for memory usage. 
 When RAM is closed to full, some less frequently used data is transferred to swap.
-When the computer is hibernating, all data on ram is transferred to swap, which will be transferred back to RAM after hibernation.
+When the computer is hibernating, opened files stored in RAM are written to filesystems, and everything else is transferred to swap, which will be transferred back to RAM after hibernation.
 Swap is optional, but I recommend to __*always*__ use swap, unless your disk space is very small (<100GB). 
-The size of sway shall be bigger than RAM. 
+The size of swap shall be bigger than RAM. 
 
 Reboot the computer and enjoy.
 
 ## Footnotes
 
-[^Linux for Mac]: Apple has 'closed' its computer in the sense that it does not allow users to manipulate the computer hardware as they wish.
+[^Linux on Mac]: Apple has 'closed' its computer in the sense that it does not allow users to manipulate the computer hardware as they wish.
 As a result, one have to 'hack' the Mac to install Linux, which is a difficult and unreliable procedure.
 There are efforts to do this, nevertheless. See 
 <a href="https://asahilinux.org/" target='_blank'>Asahi Linux</a>.
@@ -97,3 +97,5 @@ There are efforts to do this, nevertheless. See
 [KDE Plasma](https://www.youtube.com/watch?v=iIxRm8IhFJs);
 [Gnome](https://www.youtube.com/watch?v=D0vKSIEQmwo);
 [Hyprland](https://www.youtube.com/watch?v=mmRKWgiPulg);
+
+[^swap]: See [Arch Wiki](https://wiki.archlinux.org/title/Swap) for more.

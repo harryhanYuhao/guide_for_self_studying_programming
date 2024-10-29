@@ -159,9 +159,9 @@ $ find . -type f | less  # list all files recursively and open in less
 
 Most commands will treat stdin and command arguments differently.
 
-For example, how can we count how many lines of code are in files presented in the current directory?
+One example is to count the total number of lines in all files under the current directory, by using `find .`, `wc`, `xargs`, and pipeline.
 
-We can use `wc -l <filename>` to count the number of lines in a file, and `find . -type f` to list all files in the current directory.
+`wc -l <filename>` counts the number of lines in a file; `find . -type f` lists all files in the current directory.
 `find . -type f | wc -l` will, however, only counts the number of lines in the output of `find . -type f`, i.e., how many files there are in the current directory. 
 
 We need, instead, pipe the output of `find` to the arguments of `wc`. `xargs` is the commad used for this.
@@ -171,6 +171,27 @@ $ find . -type f | xargs wc -l # count total number of lines in files of current
 ```
 
 ## Bash History, `!`, arrow keys, and `Ctrl-r`.
+
+`history` command shows the bash command history. 
+
+Here is an example:
+
+```sh 
+$ history
+  (omitted)
+  928  a
+  929  history 
+  930  man history 
+  931  ls
+  933  man history
+  934  clear
+```
+
+You can use up and down arrow keys to substitute current command with history commands. 
+
+`!<n>` is the shortcut to execute the nth command in the history.
+
+Chech `man history` for more.
 
 ### Note on `!`
 

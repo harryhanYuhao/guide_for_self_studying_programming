@@ -2,7 +2,7 @@
 
 [Yetin Guide for Coding](./title_page.md)
 
-- [How to Read this book](./introduction/how_to_read_this_book.md)
+- [The Roadmap](./the_roadmap.md)
 - [What is a Computer](./what_is_computer/summary.md)
     - [Hardware](./what_is_computer/hardware.md)
     - [Software](./what_is_computer/software.md)

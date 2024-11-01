@@ -14,7 +14,7 @@
         - [Navigating File System](./let_there_be_linux/linux_on_command_line/navigating_fs.md)
         - [Package Manager](./let_there_be_linux/linux_on_command_line/package_manger.md)
         - [Advanced Concepts](./let_there_be_linux/linux_on_command_line/advanced.md)
-    - [Linux Workflows](./let_there_be_linux/linux_workflows.md)
+    - [Command Line Workflows](./let_there_be_linux/command_line_workflow.md)
     - [Linux Ricing](./let_there_be_linux/ricing.md)
     - [Linux, Unix?](./let_there_be_linux/linux_unix.md)
     - [Manually Install Linux](./let_there_be_linux/manually_install.md)

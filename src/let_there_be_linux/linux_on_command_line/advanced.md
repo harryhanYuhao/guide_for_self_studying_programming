@@ -193,8 +193,3 @@ You can use up and down arrow keys to substitute current command with history co
 
 Chech `man history` for more.
 
-### Note on `!`
-
-TODO: `set +H`, history, negate pattern, etc
-
-Check [glob manual 7](https://man7.org/linux/man-pages/man7/glob.7.html) and [bash pattern matching](https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching).

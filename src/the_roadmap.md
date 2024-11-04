@@ -1,34 +1,40 @@
 # The Roadmap
 
-A proper path to learn coding for a beginner 'only' takes the five heuristic steps: 
+A proper path to learn coding for a beginner 'only' takes these five heuristic steps: 
 
-1. Step up a computer with a development environment;
+1. Step up a computer and its development environment;
 1. Learn how to use the computer and, to a basic level, how computer works;
-1. Acquire several programming languages
-1. Learn some theoretical parts of coding, including algorithms, operating systems, etc,
+1. Lear a handful of programming languages and tools;
+1. Learn the theories coding, including algorithms, operating systems, etc,
 1. Put all of the knowledge into practice by writing a large project.
 
-<!-- TODO: UNFINISHED -->
+Upon completion you can claim youself a programmer. 
+The ocean of knowledge of computer science, however, is wide and deep, and at this point you can explore it by yourself.
 
-## Preperation: Setting Up a Computer
 
-For practical advices on buying a computer, see [appendix](../appendix/advice_on_buying_a_computer.md).
+## Step 0: Setting Up a Computer
 
-It is, nevertheless, always helpful to learn how each piece of the electronics and software work together to produce the powerful machine that we call a computer today.
+To learn coding you need a computer.
+
+Any For practical advices on buying a computer, see [appendix](../appendix/advice_on_buying_a_computer.md).
+
+A functional computer also needs an operating system.
+I recommend Linux, which is designed by and for the programmers and can greatly boost your productivity.
+
+Check [what are softwares](../what_is_computer/software.md) and
+[choosing OS](../what_is_computer/choosing_os.md).
+
+To make an informed choice on choosing the hardwares and softwares, you need to learn the basics of how each piece of the hardwares and software work together to produce the powerful machine that we call a computer today.
 See [what is a computer](../what_is_computer/summary.md).
-
-You also need to choose an operating system. 
-I recommend Linux.
-Check [choosing OS](../what_is_computer/choosing_os.md)
 
 ## Step 1: Learn the Basics
 
-One shall first learn to use the computer, acquire a programming language, and write some codes as an exercise.
+Many Linux systems run on command line interface, which is different from the graphics and click interface used by Windows and MacOS, but arguably more effective.
+Check how to using the computer on command line [here](../let_there_be_linux/linux_on_command_line.md), and how to set up development environment on it.
 
-Check how to using the computer on command line [here](../let_there_be_linux/linux_on_command_line.md).
+### Step 2: Acquire Several Programming Languages
 
-
-### Step 2: Acquire a Programming Language
+<!-- TODO: -->
 
 Learn a programming language by instructions [here](../lets_write_code/chapter_summary.md).
 

@@ -1,5 +1,8 @@
 # Common Shell Commands 
 
+There are many shell commands. 
+Here some commonly used one are presented with many practical examples. 
+
 ## `echo`, `cat`, and Output Redirection
 
 As seen in the previous section, `echo` display the text.
@@ -96,7 +99,22 @@ It is explained in [advanced concepts](./advanced.md).
 
 ## `copy`, and Glob Pattern
 
-<!-- TODO: -->
+`cp` copies the files and directories.
+
+Here are the examples:
+
+```sh
+$ cp file.txt newfile.txt  # create a new file named newfile.txt with the contents of file.txt
+$ cp file.txt -t new/dir  # create a copy of file.txt and place it uder new/dir
+$ cp -r /path/to/dir /new/dir  # the directory /path/to/dir recursively to /new/dir
+```
+
+A small detail many may miss is that `cp -r /path/to/dir /new/dir` will create `/new/dir` and make it a copy of `/path/to/dir`. 
+To copy the contents of `/path/to/dir` and place them under `/new/dir`, use the following:
+
+```sh
+$ cp -r path/to/dir/* -t /new/dir  # copies every files and directories in dir/files/recursively and place them under /new/dir
+```
 
 ## Miscellanea
 
@@ -107,3 +125,9 @@ It is explained in [advanced concepts](./advanced.md).
 - `whereis`: find where does the command locate
 - `ps`: get pid of process 
 - `kill`: kill a process with pid
+
+## More commands 
+
+There are many more shell commands, and we can not list everyone here. 
+
+To learn more, `man` pages and chatgpt are your friends.

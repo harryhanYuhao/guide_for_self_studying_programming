@@ -35,6 +35,7 @@
     - [Terminal References](./appendix/terminal_ref.md)
     - [Glossary](./appendix/glossary.md)
     - [Writing Guide](./appendix/writing_guide.md)
+    - [Pointers to Further Study](./appendix/pointers_to_further_study.md)
     - [Bibliography](./appendix/bibliography.md)
 
 

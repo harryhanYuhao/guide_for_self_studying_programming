@@ -24,3 +24,7 @@ Otherwise, the only option left is restalling the OS.
 
 *__NOTE__*: This procedure is only for a personal OS, and is a bad practise in general.
 If you are a system manager, you shall set the user groups with appropriate privileges and organise users into proper groups.
+
+## Linux, Unix? 
+
+<!-- TODO: UNFINSIHED -->

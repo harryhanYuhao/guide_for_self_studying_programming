@@ -5,22 +5,21 @@ Here is a selected list of common Linux Workflows with CLI, and some esoteric ex
 
 For more examples, please consult stackoverflow and chatgpt.
 
-## Common Workflows 
-
-### Common Tasks
-
-#### Controlling the computer
-
-Some of the following tools may not be reinstalled on your system. 
-Install them with your package manager.
+## Regular Workflows 
 
 ```sh
 $ brightnessctl set 10%-  # increase the brightness of screen by 10%
 $ amixer set Master 5%+  # increase audio by 5%. Only works on pulseaudio systems.
+$ nmtui  # An intuitive tool to connects to wifi
 $ gammastep -O 4000  # set the display color tempreture to 4000K. (For night light)
 ```
+Some commands may not may not work on all system. 
+They are, in additioin, generally not preinstalled.
+In that case install them with the package manager.
 
-The desktop environment usually also exposes APIs to control the desktop. 
+### Controlling the Desktop Environment
+
+The desktop environment will usually also exposes a miscellania of APIs. 
 Here are some examples for Gnome:
 
 ```sh
@@ -30,24 +29,27 @@ $ gsettings set org.gnome.desktop.background picture-uri "file:///path/to/your/i
 Other system configurations, such as controlling the mouse speed, set the display screen and resolutions, are controlled by the desktop environment.
 Check their documentations for how to configure them.
 
-### Uncommon, but useful examples
+Their usage and configuration will be introduced in [Linux Ricing](./ricing.md)
 
-#### Flash iso image onto a USB and make it a bootable device
+### Text Editors
+
+## Less common, but useful examples
+
+### Flash iso image onto a USB and make it a bootable device
 
 The first step of installing an operating system is to flash its installation image onto a usb. 
-This can be done with one command on Linux.
-
+This can be done with the command `cp` on Linux.
 
 First, find the path of your USB.
 
 ```sh
 $ lsblk  # short for list block device
-sda           8:0    1  58.6G  0 disk 
+sda           8:0    1  58.6G  0 disk  # This is the USB
 ├─sda1        8:1    1   4.4G  0 part 
 ├─sda2        8:2    1   4.9M  0 part 
 ├─sda3        8:3    1   300K  0 part 
 └─sda4        8:4    1  54.2G  0 part 
-nvme0n1     259:0    0 476.9G  0 disk 
+nvme0n1     259:0    0 476.9G  0 disk # This is the SDD
 ├─nvme0n1p1 259:1    0     1G  0 part /boot
 ├─nvme0n1p2 259:2    0    16G  0 part [SWAP]
 └─nvme0n1p3 259:3    0 459.9G  0 part /
@@ -55,7 +57,7 @@ nvme0n1     259:0    0 476.9G  0 disk
 
 <details>
 <summary>
-What are the outputs of `lsblk`?
+What is the output of `lsblk`?
 </summary>
 
 The physical disk is presented as block device on Linux. 
@@ -68,8 +70,9 @@ The block devices are presented as files under `/dev` directory.
 
 USB devices are usually named as `sda` , `sdb`, etc.
 It can be distinguished by its capacity; or just compare the output of `lsblk` before and after plugin a USB.
+The path for the USB will be in the form of `\dev\sda`.
 
-Assuming the path for the required image is `live-disk.iso`, the following command will flash it to the usb and make it automatically a bootable device.
+Assuming the path for the required image is `live-disk.iso`, the following command will flash the image to the usb and make the USB a bootable device.
 
 **_Note_**, the destination is not `/dev/sda1`, but `/dev/sda`, without the number.
 
@@ -90,8 +93,7 @@ Media creation tools may be more than 200 MB in size, and many time they do not 
 
 </details>
 
-### Esoteric Examples 
-
+## Esoteric Examples 
 
 - Internet Browser in terminal: browsh
 - View image in terminal: tiv (terminal image viewr)

@@ -1,39 +1,37 @@
 # Command Line Workflows
 
 Almost everything that can be done with GUI can also be done with CLI. 
-Here is a selected list of common Linux Workflows with CLI, and some esoteric examples. 
 
+Here is a selected list of common Linux workflows with CLI with some esoteric examples. 
 For more examples, please consult stackoverflow and chatgpt.
 
-## Regular Workflows 
+## Controlling the Computer
+
+Cli can command the computer to shutdown now reboot.
 
 ```sh
+$ shutdown now # shutdown the computer immediately
+$ reboot # reboot the computer
+```
+
+### Sound, display, and keyboard
+
+```sh
+$ # These commands may not be present on all systems or may not work for all environments
 $ brightnessctl set 10%-  # increase the brightness of screen by 10%
 $ amixer set Master 5%+  # increase audio by 5%. Only works on pulseaudio systems.
 $ nmtui  # An intuitive tool to connects to wifi
 $ gammastep -O 4000  # set the display color tempreture to 4000K. (For night light)
 ```
-Some commands may not may not work on all system. 
-They are, in additioin, generally not preinstalled.
-In that case install them with the package manager.
 
-### Controlling the Desktop Environment
+Many system configurations, such as controlling the mouse speed, set the display screen and resolutions, are controlled by the desktop environment.
+Desktop environments often offers some cli tools for more control. 
 
-The desktop environment will usually also exposes a miscellania of APIs. 
 Here are some examples for Gnome:
 
 ```sh
 $ gsettings set org.gnome.desktop.background picture-uri "file:///path/to/your/image.jpg"
 ```
-
-Other system configurations, such as controlling the mouse speed, set the display screen and resolutions, are controlled by the desktop environment.
-Check their documentations for how to configure them.
-
-Their usage and configuration will be introduced in [Linux Ricing](./ricing.md)
-
-### Text Editors
-
-## Less common, but useful examples
 
 ### Flash iso image onto a USB and make it a bootable device
 
@@ -93,11 +91,10 @@ Media creation tools may be more than 200 MB in size, and many time they do not 
 
 </details>
 
-## Esoteric Examples 
-
-- Internet Browser in terminal: browsh
-- View image in terminal: tiv (terminal image viewr)
+### Esoteric Examples 
 
 ```sh
+$ browsh # open a browser in terminal
+$ tiv image.jpg # view an image in terminal
 $ beep # make a beep sound.
 ```

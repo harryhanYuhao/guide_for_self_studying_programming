@@ -25,7 +25,7 @@ This book will adopt this custom, and use coding to mean both the act of writing
 
 ## Logistics
 
-As of September 2024, the book is still in early draft. 
+As of January 2025, the book is still in early draft. 
 The content is prereleased on 
 [book.yetin.net](http://book.yetin.net) and 
 [Github](https://github.com/harryhanYuhao/guide_for_self_studying_programming).

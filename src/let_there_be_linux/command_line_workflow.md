@@ -3,9 +3,13 @@
 Almost everything that can be done with GUI can also be done with CLI. 
 
 Here is a selected list of common Linux workflows with CLI with some esoteric examples. 
-For more examples, please consult stackoverflow and chatgpt.
+The commands listes here may not be preinstalled on your system, and you may need to install the appropriate packages.
+For more examples consult various AI chat tools. 
+As of 2025 the AI chatbox are extemely good at answering questions like "How to connect to a usb on Linux?", which has a definite and correct answer presented on some obscure online forum which no human being is able to find.
 
 ## Controlling the Computer
+
+### Wifi, sound, etc.
 
 Cli can command the computer to shutdown now reboot.
 
@@ -14,7 +18,16 @@ $ shutdown now # shutdown the computer immediately
 $ reboot # reboot the computer
 ```
 
-### Sound, display, and keyboard
+You can connect to wifi on cli
+
+```sh
+$ nmtui # a terminal user interface for network manager
+$ # nmtui requires `network-manager` 
+$ iwctl # an alternative to nmtui
+```
+
+Cli can also control sound, brightness, and display.
+This is useful for automatic tasks and system ricing.
 
 ```sh
 $ # These commands may not be present on all systems or may not work for all environments
@@ -32,6 +45,18 @@ Here are some examples for Gnome:
 ```sh
 $ gsettings set org.gnome.desktop.background picture-uri "file:///path/to/your/image.jpg"
 ```
+
+### Know About your Computer 
+
+```sh
+$ sudo lscpu # list cpu information 
+$ sudo lshw # list hardware information 
+$ sudo lsusb # list usb devices 
+$ sudo lsblk # list block devices 
+$ sudo lspci # list pci devices 
+$ free -h # show memory usage 
+```
+## Rare but useful examples
 
 ### Flash iso image onto a USB and make it a bootable device
 

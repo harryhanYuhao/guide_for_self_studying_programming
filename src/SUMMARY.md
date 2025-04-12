@@ -20,6 +20,7 @@
     - [FAQ](./let_there_be_linux/linux_faq.md)
 - [Let's Write Code](./lets_write_code/chapter_summary.md)
     - [C](./lets_write_code/c.md)
+        - [Gnu Multiple Precision Library](./lets_write_code/c/gmp.md)
     - [C++](./lets_write_code/cpp.md)
     - [Rust](./lets_write_code/rust.md)
     - [Bash](./lets_write_code/bash.md)

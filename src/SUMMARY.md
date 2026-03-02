@@ -26,6 +26,7 @@
     - [Bash](./lets_write_code/bash.md)
     - [Python](./lets_write_code/python/python.md)
         - [Python Reproducibility](./lets_write_code/python/python_reproducibility.md)
+    - [GDScript](./lets_write_code/gdscript.md)
     - [Java](./lets_write_code/java.md)
     - [Assembly](./lets_write_code/assembly.md)
 - [Operating System](./os/os.md)
